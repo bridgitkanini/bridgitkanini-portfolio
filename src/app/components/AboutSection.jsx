@@ -14,7 +14,6 @@ const TAB_DATA = [
         <li>Next.js</li>
         <li>Vite</li>
         <li>Node.js</li>
-        <li>Express</li>
       </ul>
     ),
   },
