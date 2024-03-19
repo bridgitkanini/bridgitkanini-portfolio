@@ -57,10 +57,17 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
+      <h2 className="text-center text-5xl font-bold text-white mb-4">
+        More About Me...
+      </h2>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image-new.png" alt="About Image" width={500} height={500} />
+        <Image
+          src="/images/about-image-new.png"
+          alt="About Image"
+          width={500}
+          height={400}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a self-taught programmer currently specializing in Frontend Web
             Development. My expertise lies in JavaScript, ReactJS, HTML, and
@@ -70,8 +77,8 @@ const AboutSection = () => {
             am always looking to expand my knowledge and skill set. Currently, I
             am delving into NodeJS, full-stack web development, and advanced
             computer science algorithms. I thrive in collaborative environments
-            and am adept at working within teams to achieve goals, meet
-            targets, and provide innovative technological solutions.
+            and am adept at working within teams to achieve goals, meet targets,
+            and provide innovative technological solutions.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
