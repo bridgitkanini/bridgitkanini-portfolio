@@ -22,7 +22,8 @@ const achievementsList = [
   },
   {
     metric: "Months",
-    value: "4+",
+    value: "4",
+    postfix: "+",
   },
 ];
 
@@ -36,7 +37,7 @@ const AchievementsSection = () => {
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-white text-4xl font-bold flex flex-row">
+              <h2 className="text-teal-500 text-3xl font-bold flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
