@@ -4,22 +4,23 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+// import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="lg:py-16 mt-24 mx-auto px-12 pt-4">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+    <section id="home" className="lg:py-4 mt-8 mx-auto px-8">
+      <div className="flex flex-col justify-center items-center ">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-12"> */}
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+          Hello, I&apos;m{" "}
+        </h1>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
         >
-          <h1 className="text-white mb-4 text-2xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-teal-400">
-              Hello, I&apos;m{" "}
-            </span>
-            <br></br>
+          <h1 className="text-white mb-4 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-extrabold">
             <TypeAnimation
               sequence={[
                 "Bridgit Kanini",
@@ -36,43 +37,105 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Transforming Ideas into Dynamic, Visually Engaging Web Experiences
-          </p>
-          <div>
-            <Link
-              href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-slate-500 to-teal-300 hover:bg-slate-200 text-white"
-            >
-              Hire Me
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1AxNa1amgcg9q7lXzX-qs1Ge7E6Hhd1EO/view?usp=sharing"
-              target="_blank"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-slate-400 to-teal-600 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#1f1e39] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </Link>
-          </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
-        >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <p className="text-[#ADB7BE] text-base sm:text-lg mb-2 lg:text-base">
+          Transforming Ideas into Dynamic, Visually Engaging Web Experiences
+        </p>
+        <div>
+          <Link
+            href="/#contact"
+            className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-semibold"
+          >
+            Hire Me
+          </Link>
+          <Link
+            href="/#about"
+            className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400 mt-3"
+          >
+            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+              More About Me
+            </span>
+          </Link>
+        </div>
+        <div className="flex mt-4">
+          <div className="flex flex-col">
+            <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14 ml-2">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="javascript"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">Javascript</span>
+            </div>
+            <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 -ml-20">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                alt="react"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">ReactJS</span>
+            </div>
+            <div className="flex bg-[#d0cecb] text-[#4c4a4b] rounded-full px-4 py-1">
+              <img
+                src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                alt="tailwind"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">Tailwind CSS</span>
+            </div>
+          </div>
+          <div className="flex flex-col flex-1 rounded-full bg-[#000] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative mx-4">
             <Image
               src="/images/hero-image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
             />
           </div>
-        </motion.div>
+          <div className="flex flex-col">
+            <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                alt="nodejs"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">NodeJS</span>
+            </div>
+            <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 ml-20">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                alt="mongodb"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">MongoDB</span>
+            </div>
+            <div className="flex bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 ml-8">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                alt="mysql"
+                width="25"
+                height="25"
+                className="mr-2"
+              />
+              <span className="">MySQL</span>
+            </div>
+          </div>
+        </div>
+        {/* <div className="mt-8">
+          <KeyboardDoubleArrowDownIcon />
+          <span>Scroll to view</span>
+        </div> */}
       </div>
     </section>
   );

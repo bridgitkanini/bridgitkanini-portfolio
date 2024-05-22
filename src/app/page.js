@@ -9,10 +9,10 @@ import SkillsSection from "./components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#1f1e39] py-4">
+    <main className="flex min-h-screen flex-col bg-[#0d0c0d] py-4">
       <Navbar />
       <HeroSection />
-      <AchievementsSection />
+      {/* <AchievementsSection /> */}
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
