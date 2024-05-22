@@ -32,11 +32,11 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#1f1e39] bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-10 text-white bg-[#0d0c0d] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between px-4 py-2">
         <Link
           href={"/"}
-          className="text-xs md:text-xs text-gray-400 font-normal"
+          className="text-xs md:text-xs font-normal ml-16"
         >
           BKM-CODE
         </Link>
@@ -44,14 +44,14 @@ const Navbar = () => {
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-[#0d0c0d] hover:text-white hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
@@ -68,6 +68,7 @@ const Navbar = () => {
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {/* <hr className="border-t-1 border-amber-200 mx-20" /> */}
     </nav>
   );
 };
