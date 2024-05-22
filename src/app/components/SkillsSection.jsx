@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="mb-8 xl:gap-16 sm:py-16 xl:px-16" >
+    <section id="skills" className="mb-8 xl:gap-16 sm:py-16 xl:px-16">
       <h2 className="text-center text-5xl font-bold text-white mt-4 mb-8 md:mb-12">
         What I Do...
       </h2>
@@ -111,6 +111,14 @@ const SkillsSection = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
             alt="typescript"
+            width="100"
+            height="100"
+          />
+        </a>
+        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+            alt="mysql"
             width="100"
             height="100"
           />
