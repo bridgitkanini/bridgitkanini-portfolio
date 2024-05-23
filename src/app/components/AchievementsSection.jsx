@@ -35,7 +35,7 @@ const achievementsList = [
 
 const AchievementsSection = () => {
   return (
-    <div className="xl:gap-16 sm:py-8">
+    <div className="xl:gap-16 sm:py-8 -mt-2">
       <div className="rounded-md flex flex-col sm:flex-row items-center gap-8">
         {achievementsList.map((achievement, index) => (
           <div

@@ -37,7 +37,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2 text-sm">
+      <ul className="list-disc pl-2 text-sm -mt-2">
         <li>
           <a
             href="https://www.freecodecamp.org/certification/bkm-code/javascript-algorithms-and-data-structures"
@@ -90,10 +90,15 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="py-4 mx-auto px-8">
-      <h2 className="text-center text-transparent mt-8 bg-clip-text bg-gradient-to-r from-amber-100 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
-        About Me...
-      </h2>
+    <section id="about" className="py-2 mx-auto px-8 mb-24">
+      <div className="relative flex flex-col items-center justify-center mt-16">
+        <span className="text-xs tracking-[.25em] text-amber-50 text-center -mb-2">
+          Get to know me
+        </span>
+        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+          About Me
+        </h2>
+      </div>
       <div className="md:grid md:grid-cols-2 gap-4 px-4 xl:gap-4 sm:py-4 xl:px-4">
         <Image
           src="/images/about-image02.png"
@@ -139,7 +144,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="ml-80 -mt-8">
+      <div className="ml-80 -mt-14">
         <Link
           href="/#contact"
           className="absolute ml-72 mt-1 px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
