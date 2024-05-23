@@ -4,14 +4,15 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-// import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="lg:py-4 mt-8 mx-auto px-8">
-      <div className="flex flex-col justify-center items-center ">
+    <section id="home" className="py-4 mx-auto px-8 mb-8">
+      <div className="flex flex-col justify-center items-center mt-12">
         {/* <div className="grid grid-cols-1 sm:grid-cols-12"> */}
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-600 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r  from-amber-200 from-25% via-amber-400 via-50% to-amber-600 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
           Hello, I&apos;m{" "}
         </h1>
         <motion.div
@@ -20,7 +21,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
         >
-          <h1 className="text-white mb-4 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-2 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-extrabold">
             <TypeAnimation
               sequence={[
                 "Bridgit Kanini",
@@ -57,7 +58,7 @@ const HeroSection = () => {
             </span>
           </Link>
         </div>
-        <div className="flex mt-4">
+        <div className="flex mt-4 ml-4">
           <div className="flex flex-col">
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14 ml-2">
               <img
@@ -132,10 +133,10 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        {/* <div className="mt-8">
-          <KeyboardDoubleArrowDownIcon />
-          <span>Scroll to view</span>
-        </div> */}
+        <div className="flex flex-col mt-4 -ml-2">
+          <span className="text-xs mb-1" >scroll to view</span>
+          <FontAwesomeIcon icon={faAnglesDown} className="text-amber-400 text-2xl animate-bounce"/>
+        </div>
       </div>
     </section>
   );
