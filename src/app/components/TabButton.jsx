@@ -11,14 +11,20 @@ const TabButton = ({ active, selectTab, children }) => {
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold text-2xl hover:text-teal-700 ${buttonClasses}`}>
+      <p
+        className={`text-sm inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 ${buttonClasses} ${
+          active
+            ? "bg-gradient-to-br from-amber-200 to-amber-600"
+            : "bg-[#241c0a] text-amber-500"
+        }`}
+      >
         {children}
       </p>
-      <motion.div
+      {/* <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-teal-700 mt-2 mr-3"
-      ></motion.div>
+        className="h-1 mt-2 mr-3"
+      ></motion.div> */}
     </button>
   );
 };
