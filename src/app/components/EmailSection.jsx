@@ -41,14 +41,19 @@ const EmailSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 mt-24 mx-14">
-      <h2 className="text-center text-5xl font-bold text-white py-10">
-        Contact Me...
-      </h2>
+    <section id="contact" className="py-12 pb-8 mt-24 mx-14">
+      <div className="relative flex flex-col items-center justify-center mt-8">
+        <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
+          Get in touch
+        </span>
+        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+          Contact Me
+        </h2>
+      </div>
       <div className="grid md:grid-cols-2 my-12 md:my-12 gap-4 relative">
-        <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+        <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
         <div className="z-10">
-          <h5 className="text-xl font-bold text-white my-2">
+          <h5 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% my-2">
             Let&apos;s Connect
           </h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -88,7 +93,7 @@ const EmailSection = () => {
                   type="email"
                   id="email"
                   required
-                  className="bg-[#35354d] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#181919] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="jacob@google.com"
                 />
               </div>
@@ -104,7 +109,7 @@ const EmailSection = () => {
                   type="text"
                   id="subject"
                   required
-                  className="bg-[#35354d] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#181919] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Just saying hi"
                 />
               </div>
@@ -118,13 +123,13 @@ const EmailSection = () => {
                 <textarea
                   name="message"
                   id="message"
-                  className="bg-[#35354d] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#181919] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Let's talk about..."
                 />
               </div>
               <button
                 type="submit"
-                className="bg-teal-500 hover:bg-teal-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                className="bg-gradient-to-r from-amber-300 from-25% via-amber-400 via-50% to-amber-500 to-70% hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-bold py-2.5 px-5 rounded-lg w-full"
               >
                 Send Message
               </button>
