@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import SkillsSection from "./components/SkillsSection";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import AllProjects from "./components/AllProjects";
 config.autoAddCss = false;
 
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ProjectsSection />
       <EmailSection />
       <Footer />
+      <AllProjects />
     </main>
   );
 }
