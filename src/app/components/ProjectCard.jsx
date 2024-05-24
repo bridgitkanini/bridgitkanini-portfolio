@@ -1,32 +1,56 @@
-import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import React from "react";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, techStack }) => {
   return (
-    <div>
+    <div className="grid grid-cols-2 gap-4">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
+        className="h-80 md:h-96 rounded-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
-      >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#1f1e39] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-          </Link>
+      ></div>
+      <div className="rounded-b-xl mt-3 bg-[#181818]py-6 px-4 pt-10">
+        <h5 className="text-amber-500 text-2xl font-bold mb-2">{title}</h5>
+        <p className="py-4">{description}</p>
+        <div className="flex flex-row gap-2 py-4">
+          <p className="text-white">TechStack:</p>
+          <div className="flex flex-row  flex-wrap gap-2">
+            {techStack.map((tech, index) => (
+              <div
+                key={index}
+                className="flex flex-row bg-[#d0cecb] text-[#333233] rounded-full w-fit h-fit px-4 py-1"
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  width="10"
+                  height="10"
+                  className="mr-2"
+                />
+                <span className="text-xs">{tech.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-row gap-4">
           <Link
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            target="_blank"
+            className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+              Go to {title}
+            </span>
+          </Link>
+          <Link
+            href={gitUrl}
+            target="_blank"
+            className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
+          >
+            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+              View Code
+            </span>
           </Link>
         </div>
-      </div>
-      <div className="text-[#1f1e39] rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#234e6d]">{description}</p>
       </div>
     </div>
   );
