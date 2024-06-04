@@ -12,6 +12,7 @@ const EmailSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
+      from: "linus.m.muema@gmail.com",
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
