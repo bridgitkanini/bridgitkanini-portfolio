@@ -21,6 +21,7 @@ const projectsData = [
     title: "AfriVazi",
     description:
       "Designed and implemented a shopping app dedicated to African-inspired fashion, featuring vibrant and culturally rich designs like Ankara, Asoebi, and Dashiki. The app offers a seamless user experience, integrating advanced search and filter options to help users find their perfect style.",
+    description2: "",
     image: "/images/projects/3.png",
     alt: "Project 2 Image",
     tag: ["All", "Web"],
@@ -181,6 +182,12 @@ const ProjectsSection = () => {
           className="mt-8 text-xl px-20 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
         >
           Checkout More Projects
+        </Link>
+        <Link
+          href="/singleproject"
+          className="mt-8 text-xl px-20 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
+        >
+          Checkout Single Projects
         </Link>
       </div>
     </section>
