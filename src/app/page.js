@@ -6,12 +6,12 @@ import EmailSection from "./components/EmailSection";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-[#0d0c0d]">
       <HeroSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
       <EmailSection />
-    </>
+    </div>
   );
 }
