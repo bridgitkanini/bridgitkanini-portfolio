@@ -123,7 +123,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="mt-24 mx-auto px-12">
+    <section id="projects" className="mt-96 mx-auto px-12">
       <div className="relative flex flex-col items-center justify-center mt-16">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           My work
