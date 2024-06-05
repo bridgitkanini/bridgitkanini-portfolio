@@ -1,7 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { projectsData } from "./ProjectsData.jsx";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, techStack }) => {
+const ProjectCard = ({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+  techStack,
+}) => {
   return (
     <div className="grid grid-cols-2 gap-4">
       <div
