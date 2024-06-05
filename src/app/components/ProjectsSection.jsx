@@ -15,7 +15,7 @@ const ProjectsSection = () => {
     setTag(newTag);
   };
 
-  const filteredProjects = projectsData.filter((project) =>
+  const filteredProjects = projectsData.slice(1, 3).filter((project) =>
     project.tag.includes(tag)
   );
 
