@@ -1,40 +1,32 @@
 import React from "react";
 import { projectsData } from "./ProjectsData.jsx";
+import Link from "next/link.js";
 
 const AllProjects = () => {
-  const imgStyle = "flex items-center justify-center";
+  const boxStyle =
+    "bg-[#181919] border-1 p-2 rounded-xl flex flex-col items-center justify-center hover:scale-105 duration-300";
 
   return (
     <div id="allprojects" className="my-40">
-      <div className="grid md:grid-cols-6 md:grid-row-4 gap-4">
-        {projectsData.slice(0, 3).map((project, i) => (
+      <div className="grid grid-cols-4 auto-rows-[400px] gap-4 my-10">
+        {projectsData.map((project, i) => (
           <div
             key={i}
-            className={`${imgStyle} ${
-              i === 0
-                ? "md:col-span-4 md:row-span-2"
-                : i === 1 || i === 2
+            className={`${boxStyle} ${
+              i === 0 || i === 4 || i === 5 || i === 6
                 ? "md:col-span-2"
+                : i === 2
+                ? "md:row-span-2"
                 : ""
             }`}
           >
-            <img src={project.image} alt={project.alt} className="rounded-xl" />
-          </div>
-        ))}
-      </div>
-      <div className="grid md:grid-cols-6 md:grid-row-4 gap-4">
-        {projectsData.slice(3).map((project, i) => (
-          <div
-            key={i}
-            className={`${imgStyle} ${
-              i === 2
-                ? "md:col-span-4 md:row-span-2"
-                : i === 1 || i === 0
-                ? "md:col-span-2"
-                : ""
-            }`}
-          >
-            <img src={project.image} alt={project.alt} className="rounded-xl" />
+            <Link href="/singleproject" key={i}>
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className="rounded-xl"
+                />
+            </Link>
           </div>
         ))}
       </div>
