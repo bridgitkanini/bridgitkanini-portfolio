@@ -10,6 +10,7 @@ export const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/AfriVazi",
     previewUrl: "https://afri-vazi.vercel.app/",
+    projectUrl: "/singleProject",
     techStack: [
       {
         name: "React",
@@ -198,37 +199,37 @@ export const projectsData = [
       },
     ],
   },
-  // {
-  //   id: 7,
-  //   title: "FinTechApp",
-  //   description:
-  //     "A simple app demonstrating CRUD operations in backend development.",
-  //   image: "/images/projects/1.png",
-  //   alt: "Project 7 Image",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
-  //   previewUrl: "/",
-  //   techStack: [
-  //     {
-  //       name: "React",
-  //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "NodeJS",
-  //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "MySQL",
-  //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "Sass",
-  //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-  //     },
-  //     {
-  //       name: "Javascript",
-  //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-  //     },
-  //   ],
-  // },
+  {
+    id: 7,
+    title: "FinTechApp",
+    description:
+      "A simple app demonstrating CRUD operations in backend development.",
+    image: "/images/projects/1.png",
+    alt: "Project 7 Image",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
+    previewUrl: "/",
+    techStack: [
+      {
+        name: "React",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      },
+      {
+        name: "NodeJS",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+      {
+        name: "MySQL",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+      {
+        name: "Sass",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+      },
+      {
+        name: "Javascript",
+        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      },
+    ],
+  },
 ];
