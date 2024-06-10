@@ -10,7 +10,7 @@ const AllProjects = () => {
 
   return (
     <div id="allprojects" className="xl:gap-16 sm:py-16 xl:px-16">
-      <div className="flex flex-col my-16">
+      <div className="flex flex-col mb-16">
         <div className="flex items-center">
           <Link href="/#home">
               <FontAwesomeIcon
@@ -25,7 +25,7 @@ const AllProjects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 auto-rows-[400px] gap-4 my-10">
+      <div className="grid grid-cols-4 auto-rows-[400px] gap-4 mt-10">
         {projectsData.map((project, i) => (
           <div
             key={i}
