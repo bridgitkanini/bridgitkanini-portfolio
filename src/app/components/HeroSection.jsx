@@ -10,7 +10,7 @@ import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 const HeroSection = () => {
   return (
     <section id="home" className="py-4 mx-auto px-8 mb-8">
-      <div className="flex flex-col justify-center items-center mt-12">
+      <div className="flex flex-col justify-center items-center mt-12 gap-2 sm:gap-0">
         {/* <div className="grid grid-cols-1 sm:grid-cols-12"> */}
         <h1 className="text-transparent bg-clip-text bg-gradient-to-r  from-amber-200 from-25% via-amber-400 via-50% to-amber-600 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
           Hello, I&apos;m{" "}
@@ -39,13 +39,13 @@ const HeroSection = () => {
             />
           </h1>
         </motion.div>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-2 lg:text-base">
+        <p className="text-[#ADB7BE] text-base text-center sm:text-lg mb-2 lg:text-base">
           Transforming Ideas into Dynamic, Visually Engaging Web Experiences
         </p>
         <div>
           <Link
             href="/#contact"
-            className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-semibold"
+            className="text-center px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-semibold"
           >
             Hire Me
           </Link>
@@ -53,13 +53,13 @@ const HeroSection = () => {
             href="/#about"
             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400 mt-3"
           >
-            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+            <span className="text-center block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
               More About Me
             </span>
           </Link>
         </div>
         <div className="flex mt-4 ml-4">
-          <div className="flex flex-col">
+          <div className="hidden sm:flex flex-col">
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14 ml-2">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
@@ -91,7 +91,7 @@ const HeroSection = () => {
               <span className="">Tailwind CSS</span>
             </div>
           </div>
-          <div className="flex flex-col flex-1 rounded-full bg-[#000] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative mx-4">
+          <div className="flex flex-col flex-1 rounded-full w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative mx-4">
             <Image
               src="/images/hero-image.png"
               alt="hero image"
@@ -100,7 +100,7 @@ const HeroSection = () => {
               height={300}
             />
           </div>
-          <div className="flex flex-col">
+          <div className="hidden md:flex flex-col">
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
@@ -134,8 +134,11 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col mt-4 -ml-2">
-          <span className="text-xs mb-1" >scroll to view</span>
-          <FontAwesomeIcon icon={faAnglesDown} className="text-amber-400 text-2xl animate-bounce"/>
+          <span className="text-xs mb-1">scroll to view</span>
+          <FontAwesomeIcon
+            icon={faAnglesDown}
+            className="text-amber-400 text-2xl animate-bounce"
+          />
         </div>
       </div>
     </section>
