@@ -10,7 +10,6 @@ export const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/AfriVazi",
     previewUrl: "https://afri-vazi.vercel.app/",
-    projectUrl: "/singleProject",
     techStack: [
       {
         name: "React",

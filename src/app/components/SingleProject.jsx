@@ -1,18 +1,19 @@
 import React from "react";
-import { projectsData } from "./ProjectsData.jsx";
+import { projectsData } from "../../../components/ProjectsData";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-const SingleProject = ({ id }) => {
-  const project = projectsData.find((project) => project.id === id);
+const SingleProject = ({ params }) => {
+  const { id } = params;
+  const project = projectsData.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <p>Project not found</p>;
   }
 
   return (
-    <div id="singleproject" className="xl:gap-16 sm:py-16 xl:px-16">
+    <div className="xl:gap-16 sm:py-16 xl:px-16">
       <h1 className="ml-2 mb-10 flex-grow text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-100 from-20% via-amber-300 via-40% to-amber-600 to-60% text-sm sm:text-sm lg:text-2xl lg:leading-normal font-black">
         BKM-CODE PORTFOLIO
       </h1>
@@ -62,3 +63,18 @@ const SingleProject = ({ id }) => {
 };
 
 export default SingleProject;
+
+// Required to fetch the dynamic params
+export async function getStaticPaths() {
+  const paths = projectsData.map((project) => ({
+    params: { id: project.id.toString() },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: { params },
+  };
+}
