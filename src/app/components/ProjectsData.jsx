@@ -39,7 +39,7 @@ export const projectsData = [
     title: "CineVerse",
     description:
       "Created a dynamic movie reviews app that allows users to explore, rate, and review the latest films. The app features a user-friendly interface with personalized recommendations, advanced search capabilities, and community engagement tools.",
-    image: "/images/projects/3.png",
+    image: "/images/about-image-new.png",
     alt: "Project 2 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CineVerse",
@@ -72,7 +72,7 @@ export const projectsData = [
     title: "QuoteTherapy",
     description:
       "An SPA generating fresh quotes and background colors with each 'Next' button press, enabling users to share uplifting messages on mental health across social media platforms.",
-    image: "/images/projects/6.png",
+    image: "/images/img00.png",
     alt: "Project 3 Image",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/bridgitkanini/fCC-front-end",
@@ -105,7 +105,7 @@ export const projectsData = [
     title: "TripQuest",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
-    image: "/images/projects/4.png",
+    image: "/images/about-image-new.png",
     alt: "Project 4 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
