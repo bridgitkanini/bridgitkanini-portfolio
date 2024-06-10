@@ -13,8 +13,8 @@ const SingleProject = ({ project }) => {
       <h1 className="ml-2 mb-10 flex-grow text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-100 from-20% via-amber-300 via-40% to-amber-600 to-60% text-sm sm:text-sm lg:text-2xl lg:leading-normal font-black">
         BKM-CODE PORTFOLIO
       </h1>
-      <div>
-        <h1>
+      <div className="grid grid-flow-row gap-8">
+        <h1 className="text-white text-xl sm:text-xl lg:text-4xl lg:leading-normal mb-2">
           Project {project.id} : {project.title}
         </h1>
         <div
@@ -24,7 +24,7 @@ const SingleProject = ({ project }) => {
             backgroundSize: "cover",
           }}
         ></div>
-        <p>{project.description}</p>
+        <p>{project.description2}</p>
 
         <div className="flex flex-row gap-4">
           <Link
@@ -47,10 +47,10 @@ const SingleProject = ({ project }) => {
           </Link>
         </div>
       </div>
-      <Link href="/#allprojects">
+      <Link href="/allprojects">
         <FontAwesomeIcon
           icon={faArrowLeft}
-          className="text-amber-400 text-sm hover:text-white transition-colors duration-300 animate-pulse"
+          className="mt-10 text-amber-400 text-sm hover:text-white transition-colors duration-300"
           style={{ height: "2.4em" }}
         />
       </Link>

@@ -15,7 +15,7 @@ const AllProjects = () => {
           <Link href="/#home">
             <FontAwesomeIcon
               icon={faArrowLeft}
-              className="text-amber-400 text-sm hover:text-white transition-colors duration-300 animate-pulse"
+              className="text-amber-400 text-sm hover:text-white transition-colors duration-300"
               style={{ height: "2.4em" }}
             />
           </Link>

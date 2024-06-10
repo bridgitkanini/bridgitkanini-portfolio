@@ -4,7 +4,8 @@ export const projectsData = [
     title: "AfriVazi",
     description:
       "Designed and implemented a shopping app dedicated to African-inspired fashion, featuring vibrant and culturally rich designs like Ankara, Asoebi, and Dashiki. The app offers a seamless user experience, integrating advanced search and filter options to help users find their perfect style.",
-    description2: "",
+    description2:
+      "A shopping app dedicated to African-inspired fashion, featuring vibrant and culturally rich designs like Ankara, Asoebi, and Dashiki. The app offers a seamless user experience, integrating advanced search and filter options to help users find their perfect style. Users can explore a wide range of traditional and contemporary outfits, each meticulously crafted to reflect the rich heritage of African textiles. The app also includes personalized recommendations and a wishlist feature, allowing customers to save their favorite items for future purchases. With a secure checkout process and multiple payment options, shopping for unique African fashion has never been easier.",
     image: "/images/projects/AfriVazi.png",
     alt: "Project 1 Image",
     tag: ["All", "Web"],
@@ -38,6 +39,7 @@ export const projectsData = [
     title: "CineVerse",
     description:
       "Created a dynamic movie reviews app that allows users to explore, rate, and review the latest films. The app features a user-friendly interface with personalized recommendations, advanced search capabilities, and community engagement tools.",
+    description2: "",
     image: "/images/about-image-new.png",
     alt: "Project 2 Image",
     tag: ["All", "Web"],
@@ -71,6 +73,7 @@ export const projectsData = [
     title: "QuoteTherapy",
     description:
       "An SPA generating fresh quotes and background colors with each 'Next' button press, enabling users to share uplifting messages on mental health across social media platforms.",
+    description2: "",
     image: "/images/img00.png",
     alt: "Project 3 Image",
     tag: ["All", "Mobile"],
@@ -104,6 +107,7 @@ export const projectsData = [
     title: "TripQuest",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
+    description2: "",
     image: "/images/about-image-new.png",
     alt: "Project 4 Image",
     tag: ["All", "Web"],
@@ -137,6 +141,7 @@ export const projectsData = [
     title: "Simple CRUD App",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
+    description2: "",
     image: "/images/projects/Simple-CRUD-App.png",
     alt: "Project 5 Image",
     tag: ["All", "Web"],
@@ -170,6 +175,7 @@ export const projectsData = [
     title: "TalentTrackr",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
+    description2: "",
     image: "/images/projects/2.png",
     alt: "Project 6 Image",
     tag: ["All", "Web"],
@@ -203,6 +209,7 @@ export const projectsData = [
     title: "FinTechApp",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
+    description2: "",
     image: "/images/projects/1.png",
     alt: "Project 7 Image",
     tag: ["All", "Web"],
