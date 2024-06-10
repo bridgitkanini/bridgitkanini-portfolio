@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { projectsData } from "./ProjectsData.jsx";
 
 const ProjectCard = ({
   imgUrl,
