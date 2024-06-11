@@ -8,12 +8,14 @@ import EmailSection from "./components/EmailSection";
 export default function Home() {
   return (
     <div className="bg-[#0d0c0d]">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <EmailSection />
+      <div className="md:container md:mx-auto overflow-hidden">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <EmailSection />
+      </div>
     </div>
   );
 }
