@@ -90,7 +90,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="py-2 mx-auto px-8 mb-24">
+    <section id="about" className="py-2 mx-auto px-8 mb-24 ">
       <div className="relative flex flex-col items-center justify-center mt-16">
         <span className="text-xs tracking-[.25em] text-amber-50 text-center -mb-2">
           Get to know me
@@ -105,7 +105,7 @@ const AboutSection = () => {
           alt="About Image"
           width={400}
           height={400}
-          className="rounded-full mt-20 ml-10"
+          className="rounded-full mt-20 md:ml-10"
         />
         <div className="realtive md:mt-0 text-left flex flex-col h-full -ml-10 pr-10">
           <AchievementsSection />
