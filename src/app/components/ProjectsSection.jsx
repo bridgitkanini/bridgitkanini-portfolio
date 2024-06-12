@@ -84,12 +84,6 @@ const ProjectsSection = () => {
         >
           Checkout More Projects
         </Link>
-        <Link
-          href="/singleproject"
-          className="mt-8 text-xl px-20 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
-        >
-          Checkout Single Projects
-        </Link>
       </div>
     </section>
   );
