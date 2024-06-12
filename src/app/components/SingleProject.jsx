@@ -24,27 +24,28 @@ const SingleProject = ({ project }) => {
             backgroundSize: "cover",
           }}
         ></div>
-        <p>{project.description2}</p>
-
-        <div className="flex flex-row gap-4">
-          <Link
-            href={project.previewUrl}
-            target="_blank"
-            className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
-          >
-            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
-              Go to {project.title}
-            </span>
-          </Link>
-          <Link
-            href={project.gitUrl}
-            target="_blank"
-            className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
-          >
-            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
-              View Code
-            </span>
-          </Link>
+        <div className="flex flex-col  gap-10 w-[750px] ml-60">
+          <p className="mt-4">{project.description2}</p>
+          <div className="flex flex-row gap-4">
+            <Link
+              href={project.previewUrl}
+              target="_blank"
+              className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
+            >
+              <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+                Go to {project.title}
+              </span>
+            </Link>
+            <Link
+              href={project.gitUrl}
+              target="_blank"
+              className="mt-1 px-1 inline-block py-1 rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
+            >
+              <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+                View Code
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
       <Link href="/allprojects">
