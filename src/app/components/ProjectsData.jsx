@@ -40,7 +40,7 @@ export const projectsData = [
     description:
       "Created a dynamic movie reviews app that allows users to explore, rate, and review the latest films. The app features a user-friendly interface with personalized recommendations, advanced search capabilities, and community engagement tools.",
     description2: "",
-    image: "/images/about-image-new.png",
+    image: "/images/projects/CineVerse01.png",
     alt: "Project 2 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CineVerse",
@@ -70,15 +70,15 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "QuoteTherapy",
+    title: "TalentTrackr",
     description:
-      "An SPA generating fresh quotes and background colors with each 'Next' button press, enabling users to share uplifting messages on mental health across social media platforms.",
+      "A simple app demonstrating CRUD operations in backend development.",
     description2: "",
-    image: "/images/img00.png",
+    image: "/images/projects/TalentTrackr.png",
     alt: "Project 3 Image",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/bridgitkanini/fCC-front-end",
-    previewUrl: "https://codepen.io/Bridgit-Kanini/pen/zYeQNWR",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
+    previewUrl: "/",
     techStack: [
       {
         name: "React",
@@ -104,11 +104,11 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "TripQuest",
+    title: "Simple CRUD App",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
     description2: "",
-    image: "/images/about-image-new.png",
+    image: "/images/projects/Simple-CRUD-App.png",
     alt: "Project 4 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
@@ -138,11 +138,11 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Simple CRUD App",
+    title: "TripQuest",
     description:
       "A simple app demonstrating CRUD operations in backend development.",
     description2: "",
-    image: "/images/projects/Simple-CRUD-App.png",
+    image: "/images/projects/TripQuest00.png",
     alt: "Project 5 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
@@ -172,15 +172,15 @@ export const projectsData = [
   },
   {
     id: 6,
-    title: "TalentTrackr",
+    title: "QuoteTherapy",
     description:
-      "A simple app demonstrating CRUD operations in backend development.",
+      "An SPA generating fresh quotes and background colors with each 'Next' button press, enabling users to share uplifting messages on mental health across social media platforms.",
     description2: "",
-    image: "/images/projects/2.png",
+    image: "/images/projects/QuoteTherapy.png",
     alt: "Project 6 Image",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",
-    previewUrl: "/",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/bridgitkanini/fCC-front-end",
+    previewUrl: "https://codepen.io/Bridgit-Kanini/full/zYeQNWR",
     techStack: [
       {
         name: "React",
@@ -210,7 +210,7 @@ export const projectsData = [
     description:
       "A simple app demonstrating CRUD operations in backend development.",
     description2: "",
-    image: "/images/projects/1.png",
+    image: "/images/projects/FintechApp.png",
     alt: "Project 7 Image",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/CRUD-API-Node-Express-Mongodb",

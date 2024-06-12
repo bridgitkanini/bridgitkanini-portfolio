@@ -6,7 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const AllProjects = () => {
   const boxStyle =
-    "bg-[#181919] border-1 p-2 rounded-xl flex flex-col items-center justify-center hover:scale-105 duration-300";
+    "flex flex-col items-center justify-center hover:scale-105 duration-300";
 
   return (
     <div id="allprojects" className="xl:gap-16 sm:py-16 xl:px-16">
@@ -25,7 +25,7 @@ const AllProjects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 auto-rows-[400px] gap-4 mt-10">
+      <div className="grid grid-cols-4 gap-4 mt-10 h-full w-full">
         {projectsData.map((project, i) => (
           <div
             key={i}
@@ -41,7 +41,7 @@ const AllProjects = () => {
               <img
                 src={project.image}
                 alt={project.alt}
-                className="rounded-xl"
+                className="h-full"
               />
             </Link>
           </div>
