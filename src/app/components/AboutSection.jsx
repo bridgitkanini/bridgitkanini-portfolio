@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc grid grid-cols-2 gap-x-8 sm:gap-x-1 pl-2 text-sm">
+      <ul className="list-disc grid grid-cols-2 gap-x-8 pl-2 text-sm">
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Next.js</li>
@@ -110,9 +110,9 @@ const AboutSection = () => {
           height={300}
           className="rounded-full mt-20 md:ml-10 object-contain sm:w-[400px] sm:h-[400px] mx-auto"
         />
-        <div className="relative ml-8 md:mt-0 sm:text-left flex flex-col items-center justify-center h-full sm:-ml-10 pr-10">
+        <div className="relative ml-8 md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 pr-10">
           <AchievementsSection />
-          <p className="text-sm md:text-xl lg:text-2xl mx-auto ">
+          <p className="text-sm md:text-base lg:text-lg mx-auto ">
             I write JavaScript, ReactJS, HTML, and CSS; Sass, Tailwind CSS. I am
             passionate about creative problem-solving and have a keen eye for
             detail, always striving to enhance the design of web applications. I
@@ -146,10 +146,10 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <div className="ml-8 mt-5 sm:ml-80 sm:-mt-14">
+        <div className="mt-5 sm:ml-72">
           <Link
             href="/#contact"
-            className="absolute sm:ml-72 sm:mt-1 px-1 inline-block py-1 sm:w-full w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
+            className="absolute sm:ml-64 sm:mt-1 px-1 inline-block py-1 w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
           >
             <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
               Request resume
