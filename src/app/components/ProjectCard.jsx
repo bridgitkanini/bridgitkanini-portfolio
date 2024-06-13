@@ -10,12 +10,12 @@ const ProjectCard = ({
   techStack,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid sm:grid-cols-2 gap-4">
       <div
         className="h-80 md:h-96 rounded-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       ></div>
-      <div className="rounded-b-xl mt-3 bg-[#181818]py-6 px-4 pt-10">
+      <div className="rounded-b-xl mt-3 bg-[#181818] py-6 px-4 sm:pt-10">
         <h5 className="text-amber-500 text-2xl font-bold mb-2">{title}</h5>
         <p className="py-4">{description}</p>
         <div className="flex flex-row gap-2 py-4">
@@ -38,7 +38,7 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 text-sm sm:text-xl">
           <Link
             href={previewUrl}
             target="_blank"

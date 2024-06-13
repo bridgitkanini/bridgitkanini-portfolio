@@ -42,12 +42,12 @@ const EmailSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 pb-8 mt-24 mx-14">
+    <section id="contact" className="py-12 pb-8 mt-10 sm:mt-24 mx-14">
       <div className="relative flex flex-col items-center justify-center mt-8">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           Get in touch
         </span>
-        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-3xl sm:text-3xl lg:text-5xl lg:leading-normal font-black">
           Contact Me
         </h2>
       </div>
@@ -77,7 +77,7 @@ const EmailSection = () => {
         </div>
         <div>
           {emailSubmitted ? (
-            <p className="text-green-500 text-sm mt-2">
+            <p className="text-amber-500 text-sm mt-2">
               Email sent successfully!
             </p>
           ) : (

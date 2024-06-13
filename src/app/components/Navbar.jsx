@@ -32,9 +32,9 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 text-white bg-[#0d0c0d] bg-opacity-100">
+    <nav className="hidden sm:block fixed justify-between sm:top-0 sm:left-0 sm:right-0 z-10 text-white bg-[#0d0c0d] bg-opacity-100 0verflow-hidden">
       <div className="flex justify-between items-center px-4 py-2 md:container md:py-4">
-        <Link href={"/"} className="text-xs md:text-xs font-normal md:ml-16">
+        <Link href={"/"} className="hidden sm:block text-xs md:text-xs font-normal md:ml-16">
           BKM-CODE
         </Link>
         <div className="hidden md:flex">

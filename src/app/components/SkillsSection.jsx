@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="xl:gap-16 sm:py-16 xl:px-16 mb-40">
+    <section id="skills" className="hidden sm:block xl:gap-16 sm:py-16 xl:px-16 mb-40">
       <div className="relative flex flex-col items-center justify-center">
         <span className="text-xs tracking-[.25em] text-amber-50 text-center -mb-2">
           Technologies

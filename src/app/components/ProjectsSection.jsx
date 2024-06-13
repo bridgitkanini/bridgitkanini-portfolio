@@ -25,12 +25,12 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="xl:gap-16 sm:py-16 xl:px-16 mt-64">
+    <section id="projects" className="xl:gap-16 sm:py-16 xl:px-16 mt-40 sm:mt-64">
       <div className="relative flex flex-col items-center justify-center mt-16">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           My work
         </span>
-        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-3xl sm:text-3xl lg:text-5xl lg:leading-normal font-black">
           What I have Done
         </h2>
       </div>
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
       <div className="flex justify-center">
         <Link
           href="/allprojects"
-          className="mt-8 text-xl px-20 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
+          className="mt-8 text-sm sm:text-xl px-20 inline-block py-2 w-fit sm:w-full rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
         >
           Checkout More Projects
         </Link>

@@ -21,7 +21,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
         >
-          <h1 className="text-white mb-2 text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-2 text-2xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
             <TypeAnimation
               sequence={[
                 "Bridgit Kanini",
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div>
           <Link
             href="/#contact"
-            className="text-center px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-semibold"
+            className="text-center px-2 sm:px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black font-semibold"
           >
             Hire Me
           </Link>

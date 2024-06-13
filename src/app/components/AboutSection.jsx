@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc grid grid-cols-2 gap-x-1 pl-2 text-sm">
+      <ul className="list-disc grid grid-cols-2 gap-x-8 sm:gap-x-1 pl-2 text-sm">
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Next.js</li>
@@ -90,12 +90,15 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="py-2 mx-auto px-8 mb-24 ">
-      <div className="relative flex flex-col items-center justify-center mt-16">
-        <span className="text-xs tracking-[.25em] text-amber-50 text-center -mb-2">
+    <section
+      id="about"
+      className="flex flex-col items-center justify-center py-2 mx-auto px-8 sm:mb-24 "
+    >
+      <div className="relative flex flex-col items-center justify-center mt-8 sm:mt-16">
+        <span className="text-xs tracking-[.25em] text-amber-50 text-center sm:-mb-2">
           Get to know me
         </span>
-        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-2xl sm:text-2xl lg:text-5xl lg:leading-normal font-black">
+        <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 from-25% via-amber-500 via-50% to-amber-700 to-70% text-3xl sm:text-3xl lg:text-5xl lg:leading-normal font-black">
           About Me
         </h2>
       </div>
@@ -103,20 +106,20 @@ const AboutSection = () => {
         <Image
           src="/images/about-image02.png"
           alt="About Image"
-          width={400}
-          height={400}
-          className="rounded-full mt-20 md:ml-10"
+          width={300}
+          height={300}
+          className="rounded-full mt-20 md:ml-10 object-contain sm:w-[400px] sm:h-[400px] mx-auto"
         />
-        <div className="realtive md:mt-0 text-left flex flex-col h-full -ml-10 pr-10">
+        <div className="relative ml-8 md:mt-0 sm:text-left flex flex-col items-center justify-center h-full sm:-ml-10 pr-10">
           <AchievementsSection />
-          <p className="text-md lg:text-md ">
+          <p className="text-sm md:text-xl lg:text-2xl mx-auto ">
             I write JavaScript, ReactJS, HTML, and CSS; Sass, Tailwind CSS. I am
             passionate about creative problem-solving and have a keen eye for
             detail, always striving to enhance the design of web applications. I
             am a quick learner and I am always looking to expand my knowledge
             and skill set.
           </p>
-          <div className="flex flex-row justify-start py-4">
+          <div className="flex flex-row justify-start gap-1 py-4">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -143,16 +146,16 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-      </div>
-      <div className="ml-80 -mt-14">
-        <Link
-          href="/#contact"
-          className="absolute ml-72 mt-1 px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
-        >
-          <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
-            Request resume
-          </span>
-        </Link>
+        <div className="ml-8 mt-5 sm:ml-80 sm:-mt-14">
+          <Link
+            href="/#contact"
+            className="absolute sm:ml-72 sm:mt-1 px-1 inline-block py-1 sm:w-full w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
+          >
+            <span className="block bg-[#241c0a] hover:tracking-widest transition-all ease-in-out duration-1000 rounded-full px-4 py-1 -mx-0.5 -my-0.5">
+              Request resume
+            </span>
+          </Link>
+        </div>
       </div>
     </section>
   );
