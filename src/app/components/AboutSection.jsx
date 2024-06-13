@@ -110,7 +110,7 @@ const AboutSection = () => {
           height={300}
           className="rounded-full mt-20 md:ml-10 object-contain sm:w-[400px] sm:h-[400px] mx-auto"
         />
-        <div className="relative ml-8 md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 pr-10">
+        <div className="relative md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 sm:pr-10">
           <AchievementsSection />
           <p className="text-white text-sm md:text-base lg:text-lg mx-auto ">
             I write JavaScript, ReactJS, HTML, and CSS; Sass, Tailwind CSS. I am
@@ -146,7 +146,7 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <div className="mt-5 sm:ml-72">
+        <div className="mt-5 ml-1 sm:ml-72">
           <Link
             href="/#contact"
             className="absolute sm:ml-64 sm:mt-1 px-1 inline-block py-1 w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"
