@@ -1,45 +1,67 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import TwitterIcon from "../../../public/twitter-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
 
 const EmailSection = () => {
+  const form = useRef();
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const data = {
-      from: "linus.m.muema@gmail.com",
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    emailjs
+      .sendForm("service_p4f0oo6", "template_81u606u", form.current, {
+        publicKey: "EDPbBqblG6zFJBKS-",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          + setEmailSubmitted(true);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
+
+  // const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     from: "linus.m.muema@gmail.com",
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "/api/send";
+
+  //   // Form the request for sending data to the server.
+  //   const options = {
+  //     // The method is POST because we are sending data.
+  //     method: "POST",
+  //     // Tell the server we're sending JSON.
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     // Body of the request is the JSON data we created above.
+  //     body: JSONdata,
+  //   };
+
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
+
+  //   if (response.status === 200) {
+  //     console.log("Message sent.");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
 
   return (
     <section id="contact" className="py-12 pb-8 my-10 sm:mt-24 mx-14">
@@ -81,7 +103,7 @@ const EmailSection = () => {
               Email sent successfully!
             </p>
           ) : (
-            <form className="flex flex-col" onSubmit={handleSubmit}>
+            <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
               <div className="mb-6">
                 <label
                   htmlFor="email"
