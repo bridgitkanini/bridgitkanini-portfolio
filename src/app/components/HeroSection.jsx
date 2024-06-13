@@ -134,7 +134,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col mt-4 -ml-2">
-          <span className="text-xs mb-1">scroll to view</span>
+          <span className="text-white text-xs mb-1">scroll to view</span>
           <FontAwesomeIcon
             icon={faAnglesDown}
             className="text-amber-400 text-2xl animate-bounce"

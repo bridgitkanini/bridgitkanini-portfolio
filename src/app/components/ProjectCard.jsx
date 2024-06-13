@@ -17,7 +17,7 @@ const ProjectCard = ({
       ></div>
       <div className="rounded-b-xl mt-3 bg-[#181818] py-6 px-4 sm:pt-10">
         <h5 className="text-amber-500 text-2xl font-bold mb-2">{title}</h5>
-        <p className="py-4">{description}</p>
+        <p className="text-white py-4">{description}</p>
         <div className="flex flex-row gap-2 py-4">
           <p className="text-white">TechStack:</p>
           <div className="flex flex-row  flex-wrap gap-2">

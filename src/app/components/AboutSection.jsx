@@ -112,7 +112,7 @@ const AboutSection = () => {
         />
         <div className="relative ml-8 md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 pr-10">
           <AchievementsSection />
-          <p className="text-sm md:text-base lg:text-lg mx-auto ">
+          <p className="text-white text-sm md:text-base lg:text-lg mx-auto ">
             I write JavaScript, ReactJS, HTML, and CSS; Sass, Tailwind CSS. I am
             passionate about creative problem-solving and have a keen eye for
             detail, always striving to enhance the design of web applications. I
@@ -142,7 +142,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-2">
+          <div className="text-white mt-2">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

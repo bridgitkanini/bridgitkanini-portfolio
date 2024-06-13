@@ -25,7 +25,7 @@ const SingleProject = ({ project }) => {
           }}
         ></div>
         <div className="flex flex-col gap-10 sm:w-[750px] sm:ml-60">
-          <p className="mt-4">{project.description2}</p>
+          <p className="text-white mt-4">{project.description2}</p>
           <div className="flex flex-row gap-4">
             <Link
               href={project.previewUrl}

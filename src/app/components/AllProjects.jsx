@@ -2,7 +2,7 @@ import React from "react";
 import { projectsData } from "./ProjectsData.jsx";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 const AllProjects = () => {
   const boxStyle =
@@ -17,7 +17,13 @@ const AllProjects = () => {
           </h1>
         </div>
       </div>
-
+      <div className="flex flex-col items-center justify-center my-4">
+        <span className="text-white text-xs mb-1">click to view</span>
+        <FontAwesomeIcon
+          icon={faAnglesDown}
+          className="text-amber-400 text-sm sm:text-2xl animate-bounce"
+        />
+      </div>
       <div className="grid grid-cols-4 gap-4 h-full w-full">
         {projectsData.map((project, i) => (
           <div
