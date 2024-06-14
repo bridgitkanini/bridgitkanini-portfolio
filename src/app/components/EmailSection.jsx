@@ -106,6 +106,22 @@ const EmailSection = () => {
             <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
               <div className="mb-6">
                 <label
+                  htmlFor="name"
+                  className="text-white block text-sm mb-2 font-medium"
+                >
+                  Name
+                </label>
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  required
+                  className="bg-[#181919] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div className="mb-6">
+                <label
                   htmlFor="email"
                   className="text-white block mb-2 text-sm font-medium"
                 >
@@ -117,7 +133,7 @@ const EmailSection = () => {
                   id="email"
                   required
                   className="bg-[#181919] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="jacob@google.com"
+                  placeholder="janedoe@google.com"
                 />
               </div>
               <div className="mb-6">
