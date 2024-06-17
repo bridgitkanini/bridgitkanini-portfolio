@@ -7,7 +7,7 @@ import EmailSection from "./components/EmailSection";
 
 export default function Home() {
   return (
-    <div className="bg-[#0d0c0d] overflow-hidden">
+    <div className="bg-[#0d0c0d] overflow-hidden px-5">
       <div className="md:container md:mx-auto overflow-hidden">
         <Navbar />
         <HeroSection />
