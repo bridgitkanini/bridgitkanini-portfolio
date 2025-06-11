@@ -64,7 +64,7 @@ const EmailSection = () => {
   // };
 
   return (
-    <section id="contact" className="py-12 pb-8 my-10 sm:mt-24 mx-14">
+    <section id="contact" className="py-12 pb-8 my-10 sm:mt-10 mx-14">
       <div className="relative flex flex-col items-center justify-center mt-8">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           Get in touch

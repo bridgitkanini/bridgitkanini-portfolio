@@ -38,7 +38,7 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div className="flex flex-row gap-4 text-sm sm:text-base">
+        <div className="flex flex-row gap-4 text-xs sm:text-base">
           <Link
             href={previewUrl}
             target="_blank"

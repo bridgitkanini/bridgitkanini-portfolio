@@ -200,7 +200,7 @@ export const personalProjects = [
     alt: "",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/orgs/SkillUP-Africa-PWD-Org/repositories",
-    previewUrl: "https://skillup-africa.vercel.app/home",
+    previewUrl: "https://skillup-africa.vercel.app",
     techStack: [
       {
         name: "React",
@@ -224,7 +224,7 @@ export const personalProjects = [
     alt: "",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Fusionforce101/FutureFemTech",
-    previewUrl: "https://future-fem-tech.vercel.app/home",
+    previewUrl: "https://future-fem-tech.vercel.app",
     techStack: [
       {
         name: "React",

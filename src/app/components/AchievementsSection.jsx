@@ -47,7 +47,7 @@ const AchievementsSection = () => {
                 icon={achievement.icon}
                 className="text-slate-200 text-sm sm:text-xs md:text-xl mb-2"
               />
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold flex flex-row items-center">
+              <h2 className="text-base sm:text-2xl md:text-3xl font-bold flex flex-row items-center">
                 {achievement.prefix && (
                   <span className="mr-1 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
                     {achievement.prefix}
@@ -66,7 +66,7 @@ const AchievementsSection = () => {
                     })}
                   />
                 </div> */}
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
+                <div className="text-base sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
                   {achievement.value}
                 </div>
 

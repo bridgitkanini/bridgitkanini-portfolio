@@ -35,7 +35,7 @@ const ProjectsSection = () => {
       id="projects"
       className="xl:gap-16 sm:py-16 xl:px-16 mt-20"
     >
-      <div className="relative flex flex-col items-center justify-center mt-16">
+      <div className="relative flex flex-col items-center justify-center mt-8">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           My work
         </span>
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       </div>
 
       {/* Tab Navigation */}
-      <div className="text-amber-50 text-base flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-amber-50 text-xs sm:text-base flex flex-row justify-center items-center gap-2 py-6">
         <button
           onClick={() => handleTabChange("personal")}
           className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${

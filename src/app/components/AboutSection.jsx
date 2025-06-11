@@ -106,7 +106,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center py-2 mx-auto px-8 sm:mb-24 "
+      className="flex flex-col items-center justify-center py-2 mx-8 sm:px-8 sm:mb-24 "
     >
       <div className="relative flex flex-col items-center justify-center mt-8 sm:mt-16">
         <span className="text-xs tracking-[.25em] text-amber-50 text-center sm:-mb-2">
@@ -162,11 +162,11 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="text-white mt-2">
+          <div className="text-white mt-2 mx-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <div className="mt-5 ml-1 sm:ml-72">
+        <div className="mt-2 ml-1 sm:ml-72">
           <Link
             href="/#contact"
             className="absolute sm:ml-64 sm:mt-1 px-1 inline-block py-1 w-fit rounded-full bg-gradient-to-br from-amber-200 to-amber-600 hover:bg-amber-500 text-amber-400"

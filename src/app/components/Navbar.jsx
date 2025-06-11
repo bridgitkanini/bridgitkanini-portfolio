@@ -41,12 +41,12 @@ const Navbar = () => {
 
   return (
     <nav className="hidden sm:block fixed justify-between sm:top-0 sm:left-0 sm:right-0 z-10 text-white bg-[#0d0c0d] bg-opacity-100 0verflow-hidden">
-      <div className="flex justify-between items-center px-4 py-2 md:container md:py-4">
+      <div className="flex justify-between items-center px-2 py-2 md:container md:py-4">
         <Link href={"/"} className="hidden sm:block text-xs md:text-xs font-normal md:ml-16">
           BKM-CODE
         </Link>
         <div className="hidden md:flex">
-          <ul className="flex flex-row space-x-8">
+          <ul className="flex flex-row space-x-2 text-base">
             {navLinks.map((link, index) => (
               <li
                 key={index}

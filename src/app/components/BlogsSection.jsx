@@ -46,7 +46,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <section id="blog" className="py-20">
+    <section id="blog" className="py-10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="relative flex flex-col items-center justify-center my-8 sm:mt-16">
           <span className="text-xs tracking-[.25em] text-amber-50 text-center sm:-mb-2">
