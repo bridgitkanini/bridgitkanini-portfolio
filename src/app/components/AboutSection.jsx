@@ -17,6 +17,9 @@ const TAB_DATA = [
         <li>Vite</li>
         <li>Node.js</li>
         <li>Express</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+        <li>Solidity</li>
       </ul>
     ),
   },
@@ -25,6 +28,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 text-sm">
+        <li>ALX Africa</li>
+        <li>Microsoft - LinkedIn Learning</li>
         <li>freeCodeCamp.org</li>
         <li>
           Jomo Kenyatta University of Agriculture and Technology, Nairobi -
@@ -38,6 +43,15 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2 text-sm -mt-2">
+        <li>
+          <a
+            href="https://www.linkedin.com/learning/certificates/49881f29b082b0fde0afc358fee16018b5fdddbebfc9860f0c2947adf1f6cd12?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BoMpngNRNSp%2B7rCc13%2B8qhA%3D%3D"
+            target="_blank"
+            className="hover:text-amber-300"
+          >
+            Software Development by Microsoft and LinkedIn Learning.
+          </a>
+        </li>
         <li>
           <a
             href="https://www.freecodecamp.org/certification/bkm-code/javascript-algorithms-and-data-structures"
@@ -102,22 +116,28 @@ const AboutSection = () => {
           About Me
         </h2>
       </div>
-      <div className="md:grid md:grid-cols-2 gap-4 px-4 xl:gap-4 sm:py-4 xl:px-4">
+      <div className="md:grid md:grid-cols-2 items-center justify-center gap-4 px-4 xl:gap-4 sm:py-4 xl:px-4">
         <Image
           src="/images/about-image02.png"
           alt="About Image"
           width={300}
           height={300}
-          className="rounded-full mt-20 md:ml-10 object-contain sm:w-[400px] sm:h-[400px] mx-auto"
+          className="rounded-full mt-20 md:ml-10 object-cover sm:w-[400px] sm:h-[400px] mx-auto"
         />
         <div className="relative md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 sm:pr-10">
           <AchievementsSection />
           <p className="text-white text-sm md:text-base lg:text-lg mx-auto ">
-            I write JavaScript, ReactJS, HTML, and CSS; Sass, Tailwind CSS. I am
-            passionate about creative problem-solving and have a keen eye for
-            detail, always striving to enhance the design of web applications. I
-            am a quick learner and I am always looking to expand my knowledge
-            and skill set.
+            I bring a unique mix of frontend engineering, developer relations,
+            and community leadership. I'm passionate about building software
+            that is useful, inclusive, and scalable. I enjoy crafting delightful
+            user experiences and mentoring upcoming developers, always striving
+            to deliver real value through thoughtful collaboration across teams
+            — from hackathons to ERP systems and open-source projects.  
+            <br /> <br />
+            I'm a quick learner, always expanding my knowledge and skill set,
+            and I lead with empathy and intention in every project. Outside of
+            coding, I enjoy organizing creative tech events that foster
+            community and innovation.
           </p>
           <div className="flex flex-row justify-start gap-1 py-4">
             <TabButton
