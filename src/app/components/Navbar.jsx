@@ -23,6 +23,14 @@ const navLinks = [
     path: "#projects",
   },
   {
+    title: "Reviews",
+    path: "#reviews",
+  },
+  {
+    title: "Blog",
+    path: "#blog",
+  },
+  {
     title: "Contacts",
     path: "#contact",
   },
