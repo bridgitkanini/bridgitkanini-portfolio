@@ -78,7 +78,7 @@ const Testimonials = () => {
 
           {/* Testimonial Text */}
           <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-8 text-center px-2">
-            "{currentTestimonial.text}"
+          &quot;{currentTestimonial.text}&quot;
           </p>
 
           {/* Author Info */}

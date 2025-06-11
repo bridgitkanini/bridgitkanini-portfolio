@@ -128,13 +128,13 @@ const AboutSection = () => {
           <AchievementsSection />
           <p className="text-white text-sm md:text-base mx-auto ">
             I bring a unique mix of frontend engineering, developer relations,
-            and community leadership. I'm passionate about building software
+            and community leadership. I&apos;m passionate about building software
             that is useful, inclusive, and scalable. I enjoy crafting delightful
             user experiences and mentoring upcoming developers, always striving
             to deliver real value through thoughtful collaboration across teams
             — from hackathons to ERP systems and open-source projects.  
             <br /> <br />
-            I'm a quick learner, always expanding my knowledge and skill set,
+            I&apos;m a quick learner, always expanding my knowledge and skill set,
             and I lead with empathy and intention in every project. Outside of
             coding, I enjoy organizing creative tech events that foster
             community and innovation.
