@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import BlogsSection from "./components/BlogsSection";
+import Testimonials from "./components/Testimonials";
 import EmailSection from "./components/EmailSection";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
+        <Testimonials />
         <BlogsSection />
         <EmailSection />
       </div>
