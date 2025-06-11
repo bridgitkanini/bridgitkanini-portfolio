@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-
+import Image from "next/image";
 const ToolCard = ({ icon, title, description, content }) => {
   return (
     <div className="bg-[#181919] rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
@@ -171,7 +171,7 @@ const SkillsSection = () => {
                     className="flex items-center bg-gray-200 text-gray-800 rounded-full px-3 py-2 shadow-sm hover:shadow-md hover:bg-gray-400 transition-all duration-200 border border-gray-300"
                   >
                     {skill.icon && (
-                      <img
+                      <Image
                         src={skill.icon}
                         alt={skill.name}
                         width="20"
@@ -201,7 +201,7 @@ const SkillsSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
               <ToolCard
                 icon={
-                  <img
+                  <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                     alt="React"
                     width="30"
@@ -214,7 +214,7 @@ const SkillsSection = () => {
               />
               <ToolCard
                 icon={
-                  <img
+                  <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
                     alt="TypeScript"
                     width="30"
@@ -227,7 +227,7 @@ const SkillsSection = () => {
               />
               <ToolCard
                 icon={
-                  <img
+                  <Image
                     src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
                     alt="Next.js"
                     width="30"
@@ -240,7 +240,7 @@ const SkillsSection = () => {
               />
               <ToolCard
                 icon={
-                  <img
+                  <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                     alt="Node.js"
                     width="30"

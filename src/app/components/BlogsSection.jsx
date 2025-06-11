@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogCard = ({ title, excerpt, image, link }) => {
   return (
     <div className="bg-[#181919] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       {image && (
-        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <Image src={image} alt={title} className="w-full h-48 object-cover" />
       )}
       <div className="p-8">
         <h3 className="font-bold text-xl mb-6 text-gray-200">{title}</h3>

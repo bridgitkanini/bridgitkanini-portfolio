@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const ProjectCard = ({
   imgUrl,
@@ -26,7 +27,7 @@ const ProjectCard = ({
                 key={index}
                 className="flex flex-row bg-[#d0cecb] text-[#333233] rounded-full w-fit h-fit px-4 py-1"
               >
-                <img
+                <Image
                   src={tech.icon}
                   alt={tech.name}
                   width="10"

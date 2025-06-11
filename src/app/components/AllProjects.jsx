@@ -3,6 +3,7 @@ import { personalProjects } from "./ProjectsData.jsx";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const AllProjects = () => {
   const boxStyle =
@@ -38,7 +39,7 @@ const AllProjects = () => {
               }`}
             >
               <Link href={`/singleproject/${project.id}`}>
-                <img
+                <Image
                   src={project.image}
                   alt={project.alt}
                   className="sm:h-full"

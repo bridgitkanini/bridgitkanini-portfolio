@@ -61,7 +61,7 @@ const HeroSection = () => {
         <div className="flex mt-4 ml-4">
           <div className="hidden sm:flex flex-col">
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14 ml-2">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                 alt="javascript"
                 width="25"
@@ -71,7 +71,7 @@ const HeroSection = () => {
               <span className="">Javascript</span>
             </div>
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 -ml-20">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                 alt="react"
                 width="25"
@@ -81,7 +81,7 @@ const HeroSection = () => {
               <span className="">ReactJS</span>
             </div>
             <div className="flex bg-[#d0cecb] text-[#4c4a4b] rounded-full px-4 py-1">
-              <img
+              <Image
                 src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
                 alt="tailwind"
                 width="25"
@@ -102,7 +102,7 @@ const HeroSection = () => {
           </div>
           <div className="hidden md:flex flex-col">
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 mt-14">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                 alt="nodejs"
                 width="25"
@@ -112,7 +112,7 @@ const HeroSection = () => {
               <span className="">NodeJS</span>
             </div>
             <div className="flex flex-row bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 mb-16 ml-20">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
                 alt="mongodb"
                 width="25"
@@ -122,7 +122,7 @@ const HeroSection = () => {
               <span className="">MongoDB</span>
             </div>
             <div className="flex bg-[#d0cecb] text-[#4c4a4b] rounded-full w-fit h-fit px-4 py-1 ml-8">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                 alt="mysql"
                 width="25"
