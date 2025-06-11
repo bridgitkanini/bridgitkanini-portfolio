@@ -1,5 +1,5 @@
 import React from "react";
-import { projectsData } from "./ProjectsData.jsx";
+import { personalProjects } from "./ProjectsData.jsx";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
@@ -26,7 +26,7 @@ const AllProjects = () => {
           />
         </div>
         <div className="grid grid-cols-4 gap-4 h-full w-full">
-          {projectsData.map((project, i) => (
+          {personalProjects.map((project, i) => (
             <div
               key={i}
               className={`${boxStyle} ${

@@ -19,7 +19,7 @@ const SingleProject = ({ project }) => {
             Project {project.id} : {project.title}
           </h1>
           <div
-            className="h-80 md:h-96 rounded-xl relative group"
+            className="h-80 md:h-[500px] rounded-xl relative group"
             style={{
               background: `url(${project.image})`,
               backgroundSize: "cover",
