@@ -126,7 +126,7 @@ const AboutSection = () => {
         />
         <div className="relative md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 sm:pr-10">
           <AchievementsSection />
-          <p className="text-white text-sm md:text-base lg:text-lg mx-auto ">
+          <p className="text-white text-sm md:text-base mx-auto ">
             I bring a unique mix of frontend engineering, developer relations,
             and community leadership. I'm passionate about building software
             that is useful, inclusive, and scalable. I enjoy crafting delightful
