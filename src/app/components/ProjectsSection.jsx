@@ -1,23 +1,29 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import Link from "next/link";
-import { projectsData } from "./ProjectsData.jsx";
+// import Link from "next/link";
+import { personalProjects, openSourceProjects } from "./ProjectsData.jsx";
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [activeTab, setActiveTab] = useState("personal");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
+  const handleTabChange = (newTab) => {
+    setActiveTab(newTab);
   };
 
-  const filteredProjects = projectsData.slice(0, 2).filter((project) =>
-    project.tag.includes(tag)
-  );
+  // Get filtered projects based on active tab
+  const getFilteredProjects = () => {
+    if (activeTab === "opensource") {
+      return openSourceProjects;
+    } else {
+      return personalProjects;
+    }
+  };
+
+  const filteredProjects = getFilteredProjects();
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -25,7 +31,10 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="xl:gap-16 sm:py-16 xl:px-16 mt-40 sm:mt-64">
+    <section
+      id="projects"
+      className="xl:gap-16 sm:py-16 xl:px-16 mt-20"
+    >
       <div className="relative flex flex-col items-center justify-center mt-16">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           My work
@@ -34,32 +43,40 @@ const ProjectsSection = () => {
           What I have Done
         </h2>
       </div>
-      <div className="text-amber-50 flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        {/* <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        /> */}
+
+      {/* Tab Navigation */}
+      <div className="text-amber-50 text-base flex flex-row justify-center items-center gap-2 py-6">
+        <button
+          onClick={() => handleTabChange("personal")}
+          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+            activeTab === "personal"
+              ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
+              : "bg-[#241c0a] text-amber-500"
+          }`}
+        >
+          Personal Projects
+        </button>
+        <button
+          onClick={() => handleTabChange("opensource")}
+          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+            activeTab === "opensource"
+              ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
+              : "bg-[#241c0a] text-amber-500"
+          }`}
+        >
+          Open Source Projects
+        </button>
       </div>
+
       <div className="bg-[#181919] rounded-2xl">
         <ul ref={ref} className="flex flex-col md:flex-col gap-8 md:gap-12 p-8">
           {filteredProjects.map((project, index) => (
             <motion.li
-              key={index}
+              key={project.id}
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{ duration: 0.3, delay: index * 0.4 }}
+              transition={{ duration: 0.3, delay: index * 0.2 }}
             >
               <ProjectCard
                 key={project.id}
@@ -70,21 +87,22 @@ const ProjectsSection = () => {
                 previewUrl={project.previewUrl}
                 techStack={project.techStack}
               />
-              {index === 0 && (
+              {index < filteredProjects.length - 1 && (
                 <hr className="border-8 border-[#0d0c0d] mt-16 -mx-10" />
               )}
             </motion.li>
           ))}
         </ul>
       </div>
-      <div className="flex justify-center">
+
+      {/* <div className="flex justify-center">
         <Link
           href="/allprojects"
           className="mt-8 text-sm sm:text-xl px-20 inline-block py-2 w-fit rounded-full mr-4 bg-gradient-to-br from-amber-200 to-amber-600 hover:tracking-widest transition-all ease-in-out duration-1000 text-black"
         >
           Checkout More Projects
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };
