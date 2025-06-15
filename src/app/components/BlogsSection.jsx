@@ -6,7 +6,7 @@ const BlogCard = ({ title, excerpt, image, link }) => {
   return (
     <div className="bg-[#181919] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       {image && (
-        <Image src={image} alt={title} className="w-full h-48 object-cover" />
+        <Image src={image} alt={title} width={500} height={500} className="w-full h-48 object-cover" />
       )}
       <div className="p-8">
         <h3 className="font-bold text-xl mb-6 text-gray-200">{title}</h3>
