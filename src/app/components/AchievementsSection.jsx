@@ -28,7 +28,7 @@ const achievementsList = [
   {
     icon: faCertificate,
     metric: "Years Experience",
-    value: "1",
+    value: "3",
     postfix: "+",
   },
 ];
