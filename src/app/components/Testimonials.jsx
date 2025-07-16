@@ -8,7 +8,7 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      text: "Bridgit was professional, fast, and delivered a sleek responsive site. Will work with her again!",
+      text: "Bridgit delivered exactly what was needed. I appreciate the effort and the focus on getting it right—well done!",
       author: "Upwork Client",
       project: "TailAdmin",
     },
@@ -16,6 +16,11 @@ const Testimonials = () => {
       text: "Excellent communication and great eye for design. She understood my needs and exceeded expectations.",
       author: "Upwork Client",
       project: "Avatar Generation Site",
+    },
+    {
+      text: "Bridgit was professional, fast, and delivered a sleek responsive site. Will work with her again!",
+      author: "Upwork Client",
+      project: "ERP System",
     },
   ];
 
