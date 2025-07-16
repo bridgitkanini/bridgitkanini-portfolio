@@ -30,8 +30,8 @@ const ProjectCard = ({
                 <Image
                   src={tech.icon}
                   alt={tech.name}
-                  width="10"
-                  height="10"
+                  width={20}
+                  height={20}
                   className="mr-2"
                 />
                 <span className="text-xs">{tech.name}</span>

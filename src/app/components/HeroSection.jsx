@@ -64,8 +64,8 @@ const HeroSection = () => {
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                 alt="javascript"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">Javascript</span>
@@ -74,8 +74,8 @@ const HeroSection = () => {
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                 alt="react"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">ReactJS</span>
@@ -84,8 +84,8 @@ const HeroSection = () => {
               <Image
                 src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
                 alt="tailwind"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">Tailwind CSS</span>
@@ -105,8 +105,8 @@ const HeroSection = () => {
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                 alt="nodejs"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">NodeJS</span>
@@ -115,8 +115,8 @@ const HeroSection = () => {
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
                 alt="mongodb"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">MongoDB</span>
@@ -125,8 +125,8 @@ const HeroSection = () => {
               <Image
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                 alt="mysql"
-                width="25"
-                height="25"
+                width={25}
+                height={25}
                 className="mr-2"
               />
               <span className="">MySQL</span>

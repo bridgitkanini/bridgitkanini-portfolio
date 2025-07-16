@@ -1,14 +1,11 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import { motion, useInView } from "framer-motion";
-// import Link from "next/link";
+import { motion } from "framer-motion";
 import { personalProjects, openSourceProjects } from "./ProjectsData.jsx";
 
 const ProjectsSection = () => {
   const [activeTab, setActiveTab] = useState("personal");
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const handleTabChange = (newTab) => {
     setActiveTab(newTab);
@@ -69,13 +66,13 @@ const ProjectsSection = () => {
       </div>
 
       <div className="bg-[#181919] rounded-2xl">
-        <ul ref={ref} className="flex flex-col md:flex-col gap-8 md:gap-12 p-8">
+        <ul className="flex flex-col md:flex-col gap-8 md:gap-12 p-8">
           {filteredProjects.map((project, index) => (
             <motion.li
               key={project.id}
               variants={cardVariants}
               initial="initial"
-              animate={isInView ? "animate" : "initial"}
+              animate="animate"
               transition={{ duration: 0.3, delay: index * 0.2 }}
             >
               <ProjectCard

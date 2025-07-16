@@ -174,8 +174,8 @@ const SkillsSection = () => {
                       <Image
                         src={skill.icon}
                         alt={skill.name}
-                        width="20"
-                        height="20"
+                        width={20}
+                        height={20}
                         className="mr-2"
                       />
                     )}
@@ -204,8 +204,8 @@ const SkillsSection = () => {
                   <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                     alt="React"
-                    width="30"
-                    height="30"
+                    width={30}
+                    height={30}
                   />
                 }
                 title="React"
@@ -217,8 +217,8 @@ const SkillsSection = () => {
                   <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
                     alt="TypeScript"
-                    width="30"
-                    height="30"
+                    width={30}
+                    height={30}
                   />
                 }
                 title="TypeScript"
@@ -230,8 +230,8 @@ const SkillsSection = () => {
                   <Image
                     src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
                     alt="Next.js"
-                    width="30"
-                    height="30"
+                    width={30}
+                    height={30}
                   />
                 }
                 title="Next.js"
@@ -243,8 +243,8 @@ const SkillsSection = () => {
                   <Image
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                     alt="Node.js"
-                    width="30"
-                    height="30"
+                    width={30}
+                    height={30}
                   />
                 }
                 title="Node.js"
