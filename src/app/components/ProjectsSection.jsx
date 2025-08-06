@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-import { personalProjects, openSourceProjects } from "./ProjectsData.jsx";
+import { web2Projects, web3Projects, openSourceProjects, mobileProjects } from "./ProjectsData.jsx";
 
 const ProjectsSection = () => {
   const [activeTab, setActiveTab] = useState("personal");
@@ -13,10 +13,16 @@ const ProjectsSection = () => {
 
   // Get filtered projects based on active tab
   const getFilteredProjects = () => {
-    if (activeTab === "opensource") {
-      return openSourceProjects;
-    } else {
-      return personalProjects;
+    switch (activeTab) {
+      case "opensource":
+        return openSourceProjects || [];
+      case "web3":
+        return web3Projects || [];
+      case "mobile":
+        return mobileProjects || [];
+      case "personal":
+      default:
+        return web2Projects || [];
     }
   };
 
@@ -51,7 +57,7 @@ const ProjectsSection = () => {
               : "bg-[#241c0a] text-amber-500"
           }`}
         >
-          Personal Projects
+          Web2
         </button>
         <button
           onClick={() => handleTabChange("opensource")}
@@ -61,7 +67,27 @@ const ProjectsSection = () => {
               : "bg-[#241c0a] text-amber-500"
           }`}
         >
-          Open Source Projects
+          Open Source
+        </button>
+        <button
+          onClick={() => handleTabChange("web3")}
+          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+            activeTab === "web3"
+              ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
+              : "bg-[#241c0a] text-amber-500"
+          }`}
+        >
+          Web3
+        </button>
+        <button
+          onClick={() => handleTabChange("mobile")}
+          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+            activeTab === "mobile"
+              ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
+              : "bg-[#241c0a] text-amber-500"
+          }`}
+        >
+          Mobile
         </button>
       </div>
 
