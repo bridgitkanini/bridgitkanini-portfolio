@@ -123,6 +123,19 @@ const SkillsSection = () => {
       name: "Solidity",
       icon: "https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg",
     },
+    // Mobile Development
+    {
+      name: "React Native",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    },
+    {
+      name: "Expo",
+      icon: "https://cdn.worldvectorlogo.com/logos/expo-1.svg"
+    },
+    {
+      name: "NativeWind",
+      icon: "https://raw.githubusercontent.com/nativewind/nativewind/HEAD/assets/logo.svg"
+    },
     // Skills without specific icons
     { name: "RestAPI", icon: null },
     { name: "Odoo", icon: null },

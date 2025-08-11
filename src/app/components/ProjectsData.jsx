@@ -13,16 +13,16 @@ export const web2Projects = [
       { name: "TypeScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" },
       { name: "Node.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
       { name: "Express", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" },
-      { name: "MongoDB", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" },
-      { name: "Stripe", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/stripe/stripe-original.svg" }
+      { name: "MySQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" },
+      { name: "Stripe", icon: "https://cdn.worldvectorlogo.com/logos/stripe-4.svg" }
     ]
   },
   {
     id: 2,
     title: "ShopYangu",
     description: "E-commerce admin panel for shop and product management with data visualization dashboard.",
-    description2: "A comprehensive admin dashboard for managing e-commerce operations including product listings, inventory, orders, and customer data. Features include CRUD operations, data visualization, and user role management.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    description2: "A comprehensive admin dashboard for managing e-commerce operations including product listings and inventory. Features include CRUD operations for shops and products management.",
+    image: "/images/projects/shop-yangu.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bridgitkanini/shop-yangu",
     previewUrl: "https://shop-yangu-one.vercel.app/",
@@ -157,93 +157,8 @@ export const web2Projects = [
   },
 ];
 
-// Open source projects data
-export const web3Projects = [
-  {
-    id: 10,
-    title: "Space Ya Tech",
-    description:
-      "Built community-focused learning interfaces and registration portals. Integrated event flows and accessible design using React and Tailwind.",
-    image:
-      "/images/projects/spaceyatech.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/SpaceyaTech/SYT-Web-Redesign",
-    previewUrl: "https://www.spaceyatech.com/",
-    techStack: [
-      {
-        name: "React",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      },
-    ],
-  },
-  {
-    id: 11,
-    title: "Diani Children's Village Website",
-    description:
-      "A multi-page website for a children's home, aimed at increasing visibility and donor engagement.",
-    image:
-      "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/SpaceyaTech/DCV-Frontend",
-    previewUrl: "https://github.com/SpaceyaTech/DCV-Frontend",
-    techStack: [
-      {
-        name: "React",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      },
-    ],
-  },
-  {
-    id: 13,
-    title: "Tech Sisters Kenya Website",
-    description:
-      "Led a team of 7 to ship the MVP using Next.js, Tailwind, and GitHub. Pair-programmed with juniors, added blog + event listing features.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Tech-Sisters-Kenya/tsk-website-frontend",
-    previewUrl: "https://tsk-website-frontend-1-alpha.vercel.app/about-us",
-    techStack: [
-      {
-        name: "Next.js",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      },
-    ],
-  },
-  {
-    id: 14,
-    title: "CoLabs",
-    description:
-      "Built community-focused aimed at creating a space for developers to collaborate on open-source initiatives using React and Tailwind.",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/SpaceyaTech/CoLabs-Frontend",
-    previewUrl: "https://colabs.spaceyatech.com/",
-    techStack: [
-      {
-        name: "React",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-      },
-    ],
-  },
-];
+// Web3 projects data
+export const web3Projects = [];
 
 
 
@@ -254,6 +169,7 @@ export const openSourceProjects = [
     title: "Space Ya Tech",
     description:
       "Built community-focused learning interfaces and registration portals. Integrated event flows and accessible design using React and Tailwind.",
+    description2: "Space Ya Tech is a community-driven platform that provides learning resources and event management for tech enthusiasts. The platform features a clean, modern interface built with React and Tailwind CSS, offering seamless user experience for discovering and registering for tech events. It includes features like event filtering, user authentication, and responsive design that works across all devices. The platform serves as a hub for tech communities to connect, learn, and grow together.",
     image:
       "/images/projects/spaceyatech.png",
     tag: ["All", "Web"],
@@ -275,6 +191,7 @@ export const openSourceProjects = [
     title: "Diani Children's Village Website",
     description:
       "A multi-page website for a children's home, aimed at increasing visibility and donor engagement.",
+    description2: "The Diani Children's Village website is a heartwarming platform designed to showcase the work of a children's home and facilitate donor engagement. The responsive, multi-page site features compelling storytelling through images and content, donation integration, and information about the children's home. Built with modern web technologies, it provides an intuitive user experience that effectively communicates the organization's mission and impact. The website serves as a bridge between the children's home and potential donors, volunteers, and supporters worldwide.",
     image:
       "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
     tag: ["All", "Web"],
@@ -296,11 +213,12 @@ export const openSourceProjects = [
     title: "Tech Sisters Kenya Website",
     description:
       "Led a team of 7 to ship the MVP using Next.js, Tailwind, and GitHub. Pair-programmed with juniors, added blog + event listing features.",
+    description2: "The Tech Sisters Kenya website is a vibrant platform built with Next.js and Tailwind CSS, designed to empower and connect women in technology across Kenya. The platform features a modern blog system, event listings, and community resources. As the team lead, I coordinated a group of seven developers, implemented key features, and mentored junior developers through pair programming sessions. The website serves as a central hub for the Tech Sisters community, providing valuable resources, event information, and success stories to inspire the next generation of women in tech.",
     image:
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Tech-Sisters-Kenya/tsk-website-frontend",
-    previewUrl: "https://tsk-website-frontend-1-alpha.vercel.app/about-us",
+    previewUrl: "https://techsisterskenya.org/",
     techStack: [
       {
         name: "Next.js",
@@ -317,6 +235,7 @@ export const openSourceProjects = [
     title: "CoLabs",
     description:
       "Built community-focused aimed at creating a space for developers to collaborate on open-source initiatives using React and Tailwind.",
+    description2: "CoLabs is an innovative platform designed to foster collaboration among developers working on open-source projects. The platform provides tools for project discovery, team formation, and code collaboration, all within a user-friendly interface built with React and Tailwind CSS. Features include project boards, issue tracking, and real-time chat functionality to streamline the open-source contribution process. CoLabs serves as a meeting point for developers of all skill levels to find meaningful projects, connect with like-minded individuals, and contribute to the open-source community in a supportive environment.",
     image:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     tag: ["All", "Web"],
@@ -342,6 +261,7 @@ export const mobileProjects = [
     title: "Aora",
     description:
       "Aora is a full-stack cross-platform video sharing mobile app built with React Native, Expo Router, and NativeWind (Tailwind CSS for React Native). It uses React Context API for state management, React Hook Form with Yup for form validation, and expo-av for video playback. The backend is powered by Appwrite (self-hosted).",
+    description2: "Aora is a feature-rich, cross-platform mobile application that brings the power of video sharing to users' fingertips. Built with React Native and Expo, it offers a seamless experience across both iOS and Android devices. The app includes user authentication, video upload and streaming, social features like comments and likes, and a personalized feed. The clean, intuitive interface is powered by NativeWind (Tailwind CSS for React Native), ensuring a consistent and visually appealing experience. The backend, built with Appwrite, provides secure data storage, user management, and real-time updates, making Aora a robust platform for content creators and viewers alike.",
     image:
       "/images/projects/aora.svg",
     tag: ["All", "Mobile"],

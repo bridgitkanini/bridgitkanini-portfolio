@@ -11,21 +11,21 @@ const ProjectCard = ({
   techStack,
 }) => {
   return (
-    <div className="grid sm:grid-cols-2 gap-4">
+    <div className="grid sm:grid-cols-2 gap-8">
       <div
-        className="h-80 md:h-96 rounded-xl relative group"
+        className="h-64 md:h-80 w-80 md:w-[500px] rounded-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       ></div>
-      <div className="rounded-b-xl mt-3 bg-[#181818] py-6 px-4 sm:pt-10">
-        <h5 className="text-amber-500 text-2xl font-bold mb-2">{title}</h5>
-        <p className="text-white py-4">{description}</p>
+      <div className="rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
+        <h5 className="text-amber-500 text-xl font-bold mb-2">{title}</h5>
+        <p className="text-white text-sm py-4">{description}</p>
         <div className="flex flex-row gap-2 py-4">
-          <p className="text-white">TechStack:</p>
-          <div className="flex flex-row  flex-wrap gap-2">
+          <p className="text-white text-sm">TechStack:</p>
+          <div className="flex flex-row flex-wrap gap-2">
             {techStack.map((tech, index) => (
               <div
                 key={index}
-                className="flex flex-row bg-[#d0cecb] text-[#333233] rounded-full w-fit h-fit px-4 py-1"
+                className="flex flex-row bg-[#d0cecb] text-[#333233] rounded-full w-fit h-fit px-3 py-1"
               >
                 <Image
                   src={tech.icon}
