@@ -48,7 +48,7 @@ const ProjectsSection = () => {
       </div>
 
       {/* Tab Navigation */}
-      <div className="text-amber-50 text-xs sm:text-base flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-amber-50 text-xs sm:text-base flex flex-row justify-center items-center sm:gap-2 py-6">
         <button
           onClick={() => handleTabChange("personal")}
           className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${

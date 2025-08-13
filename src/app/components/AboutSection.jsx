@@ -14,7 +14,6 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>React.js</li>
         <li>Next.js</li>
-        <li>Vite</li>
         <li>Node.js</li>
         <li>Express</li>
         <li>MongoDB</li>

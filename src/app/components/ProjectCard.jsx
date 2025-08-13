@@ -13,10 +13,10 @@ const ProjectCard = ({
   return (
     <div className="grid sm:grid-cols-2 gap-8">
       <div
-        className="h-64 md:h-80 w-80 md:w-[500px] rounded-xl relative group"
+        className="h-64 md:h-80 w-80 md:w-[550px] rounded-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       ></div>
-      <div className="rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
+      <div className="rounded-b-xl mt-3 sm:ml-16 bg-[#181818] py-6 px-4">
         <h5 className="text-amber-500 text-xl font-bold mb-2">{title}</h5>
         <p className="text-white text-sm py-4">{description}</p>
         <div className="flex flex-row gap-2 py-4">
