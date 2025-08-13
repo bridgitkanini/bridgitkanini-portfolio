@@ -2,7 +2,12 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-import { web2Projects, web3Projects, openSourceProjects, mobileProjects } from "./ProjectsData.jsx";
+import {
+  web2Projects,
+  web3Projects,
+  openSourceProjects,
+  mobileProjects,
+} from "./ProjectsData.jsx";
 
 const ProjectsSection = () => {
   const [activeTab, setActiveTab] = useState("personal");
@@ -34,10 +39,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section
-      id="projects"
-      className="xl:gap-16 sm:py-16 xl:px-16 mt-20"
-    >
+    <section id="projects" className="xl:gap-16 sm:py-16 xl:px-16 mt-20">
       <div className="relative flex flex-col items-center justify-center mt-8">
         <span className="text-xs tracking-[.5em] text-amber-50 text-center -mb-2">
           My work
@@ -48,10 +50,10 @@ const ProjectsSection = () => {
       </div>
 
       {/* Tab Navigation */}
-      <div className="text-amber-50 text-xs sm:text-base flex flex-row justify-center items-center sm:gap-2 py-6">
+      <div className="text-amber-50 text-xs sm:text-base flex flex-wrap justify-center items-center gap-2 sm:gap-2 py-6">
         <button
           onClick={() => handleTabChange("personal")}
-          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+          className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
             activeTab === "personal"
               ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
               : "bg-[#241c0a] text-amber-500"
@@ -61,7 +63,7 @@ const ProjectsSection = () => {
         </button>
         <button
           onClick={() => handleTabChange("opensource")}
-          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+          className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
             activeTab === "opensource"
               ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
               : "bg-[#241c0a] text-amber-500"
@@ -71,7 +73,7 @@ const ProjectsSection = () => {
         </button>
         <button
           onClick={() => handleTabChange("web3")}
-          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+          className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
             activeTab === "web3"
               ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
               : "bg-[#241c0a] text-amber-500"
@@ -81,7 +83,7 @@ const ProjectsSection = () => {
         </button>
         <button
           onClick={() => handleTabChange("mobile")}
-          className={`text-sm sm:text-xl inline-block w-full sm:w-fit rounded-full mr-4 px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
+          className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
             activeTab === "mobile"
               ? "bg-gradient-to-br from-amber-200 to-amber-600 text-black"
               : "bg-[#241c0a] text-amber-500"
