@@ -1,5 +1,5 @@
 import React from "react";
-import { personalProjects } from "./ProjectsData.jsx";
+import { web2Projects } from "./ProjectsData.jsx";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faAnglesDown } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +27,7 @@ const AllProjects = () => {
           />
         </div>
         <div className="grid grid-cols-4 gap-4 h-full w-full">
-          {personalProjects.map((project, i) => (
+          {web2Projects.map((project, i) => (
             <div
               key={i}
               className={`${boxStyle} ${
