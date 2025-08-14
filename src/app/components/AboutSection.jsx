@@ -119,23 +119,24 @@ const AboutSection = () => {
         <Image
           src="/images/about-image02.png"
           alt="About Image"
-          width={300}
-          height={300}
-          className="rounded-full mt-20 md:ml-10 object-cover sm:w-[400px] sm:h-[400px] mx-auto"
+          width={400} // Match your largest CSS size
+          height={400}
+          className="rounded-full mt-20 md:ml-10 object-cover w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] mx-auto"
         />
         <div className="relative md:mt-0 sm:text-left flex flex-col h-full sm:-ml-10 sm:pr-10">
           <AchievementsSection />
           <p className="text-white text-sm md:text-base mx-auto ">
             I bring a unique mix of frontend engineering, developer relations,
-            and community leadership. I&apos;m passionate about building software
-            that is useful, inclusive, and scalable. I enjoy crafting delightful
-            user experiences and mentoring upcoming developers, always striving
-            to deliver real value through thoughtful collaboration across teams
-            — from hackathons to ERP systems and open-source projects.  
+            and community leadership. I&apos;m passionate about building
+            software that is useful, inclusive, and scalable. I enjoy crafting
+            delightful user experiences and mentoring upcoming developers,
+            always striving to deliver real value through thoughtful
+            collaboration across teams — from hackathons to ERP systems and
+            open-source projects.
             <br /> <br />
-            I&apos;m a quick learner, always expanding my knowledge and skill set,
-            and I lead with empathy and intention in every project. Outside of
-            coding, I enjoy organizing creative tech events that foster
+            I&apos;m a quick learner, always expanding my knowledge and skill
+            set, and I lead with empathy and intention in every project. Outside
+            of coding, I enjoy organizing creative tech events that foster
             community and innovation.
           </p>
           <div className="flex flex-row justify-start gap-1 py-4">

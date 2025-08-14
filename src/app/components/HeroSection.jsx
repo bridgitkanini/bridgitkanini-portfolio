@@ -98,6 +98,7 @@ const HeroSection = () => {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               width={300}
               height={300}
+              priority
             />
           </div>
           <div className="hidden md:flex flex-col">
@@ -133,7 +134,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mt-4 -ml-2">
+        <div className="flex flex-col mt-4 items-center justify-center">
           <span className="text-white text-xs mb-1">scroll to view</span>
           <FontAwesomeIcon
             icon={faAnglesDown}
