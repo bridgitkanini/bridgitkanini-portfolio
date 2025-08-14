@@ -1,7 +1,6 @@
 {
-  "buildCommand": "npm install -g pnpm@10.14.0 && pnpm install && pnpm run build",
-  "installCommand": "pnpm install",
-  "buildCommand": "pnpm run build",
+  "buildCommand": "corepack enable && corepack prepare pnpm@10.14.0 --activate && pnpm install && pnpm run build",
+  "installCommand": "corepack enable && corepack prepare pnpm@10.14.0 --activate && pnpm install",
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
