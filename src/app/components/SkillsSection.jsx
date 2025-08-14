@@ -7,9 +7,7 @@ const ToolCard = ({ icon, title, description, content }) => {
     <div className="bg-[#181919] rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
       <div className="p-4 lg:p-6">
         <div className="flex items-center mb-3">
-          <div className="bg-gradient-to-br from-amber-200 to-amber-600 p-1 lg:p-2 rounded-lg mr-3">
-            {icon}
-          </div>
+          <div className="bg-gradient-to-br from-amber-200 to-amber-600 p-1 lg:p-2 rounded-lg mr-3">{icon}</div>
           <h3 className="font-bold text-base lg:text-lg text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
             {title}
           </h3>
@@ -91,19 +89,19 @@ const SkillsSection = () => {
     },
     {
       name: "Vite",
-      icon: "https://vitejs.dev/logo.svg",
+      icon: "https://vitejs.dev/logo.svg"
     },
     {
       name: "Vitest",
-      icon: "https://vitest.dev/logo-shadow.svg",
+      icon: "https://vitest.dev/logo-shadow.svg"
     },
     {
       name: "Jest",
-      icon: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
+      icon: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
     },
     {
       name: "Playwright",
-      icon: "https://playwright.dev/img/playwright-logo.svg",
+      icon: "https://playwright.dev/img/playwright-logo.svg"
     },
     {
       name: "Postman",
@@ -144,15 +142,15 @@ const SkillsSection = () => {
     // Mobile Development
     {
       name: "React Native",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
     },
     {
       name: "Expo",
-      icon: "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
+      icon: "https://cdn.worldvectorlogo.com/logos/expo-1.svg"
     },
     {
       name: "NativeWind",
-      icon: "https://raw.githubusercontent.com/nativewind/nativewind/HEAD/assets/logo.svg",
+      icon: "https://raw.githubusercontent.com/nativewind/nativewind/HEAD/assets/logo.svg"
     },
     // Skills without specific icons
     { name: "RestAPI", icon: null },
@@ -174,147 +172,117 @@ const SkillsSection = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="flex flex-col xl:flex-row gap-12 lg:gap-16">
-          {/* Left Side - Skills */}
-          <div className="xl:w-[35%] space-y-8 pt-5">
-            <div className="text-center xl:text-left">
-              <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
-                Technical Skills
-              </h2>
-              <p className="text-gray-300 mb-6">
-                Technologies and tools I work with regularly
-              </p>
-              <p className="text-gray-300 max-w-3xl mx-auto text-sm">
-                With a strong foundation in the React ecosystem and Python APIs,
-                my interests also extend to ERP customizations and Web3
-                experiments. I have a keen eye for design, a creative approach
-                to problem-solving, and a continuous drive to improve how web
-                applications function and feel.
-              </p>
-            </div>
+<div className="flex flex-col xl:flex-row gap-12 lg:gap-16">
+  {/* Left Side - Skills */}
+  <div className="xl:w-[35%] space-y-8 pt-5">
+    <div className="text-center xl:text-left">
+      <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
+        Technical Skills
+      </h2>
+      <p className="text-gray-300 mb-6">
+        Technologies and tools I work with regularly
+      </p>
+      <p className="text-gray-300 max-w-3xl mx-auto text-sm">
+        With a strong foundation in the React ecosystem and Python APIs,
+        my interests also extend to ERP customizations and Web3
+        experiments. I have a keen eye for design, a creative approach
+        to problem-solving, and a continuous drive to improve how web
+        applications function and feel.
+      </p>
+    </div>
 
-            {/* All Skills Combined */}
-            <div className="space-y-4">
-              <div className="flex flex-wrap gap-2 justify-center xl:justify-start">
-                {skillsData.map((skill, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center bg-gray-200 text-gray-800 rounded-full px-3 py-2 shadow-sm hover:shadow-md hover:bg-gray-400 transition-all duration-200 border border-gray-300"
-                  >
-                    {skill.icon && (
-                      <Image
-                        src={skill.icon}
-                        alt={skill.name}
-                        width={20}
-                        height={20}
-                        className="mr-2"
-                        style={{
-                          width: "auto",
-                          height: "auto",
-                          maxWidth: "20px",
-                          maxHeight: "20px",
-                        }}
-                      />
-                    )}
-                    <span className="text-sm font-medium">{skill.name}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+    {/* All Skills Combined */}
+    <div className="space-y-4">
+      <div className="flex flex-wrap gap-2 justify-center xl:justify-start">
+        {skillsData.map((skill, index) => (
+          <div
+            key={index}
+            className="flex items-center bg-gray-200 text-gray-800 rounded-full px-3 py-2 shadow-sm hover:shadow-md hover:bg-gray-400 transition-all duration-200 border border-gray-300"
+          >
+            {skill.icon && (
+              <Image
+                src={skill.icon}
+                alt={skill.name}
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+            )}
+            <span className="text-sm font-medium">{skill.name}</span>
           </div>
+        ))}
+      </div>
+    </div>
+  </div>
 
-          {/* Right Side - Tools & Work */}
-          <div className="xl:w-[65%] space-y-8">
-            <div className="text-center">
-              <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
-                How I Work
-              </h2>
-              <p className="text-gray-300 mb-6">
-                Deep dive into my approach with key technologies
-              </p>
-            </div>
+  {/* Right Side - Tools & Work */}
+  <div className="xl:w-[65%] space-y-8">
+    <div className="text-center">
+      <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 from-50% to-[#181919]">
+        How I Work
+      </h2>
+      <p className="text-gray-300 mb-6">
+        Deep dive into my approach with key technologies
+      </p>
+    </div>
 
-            {/* Tool Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              <ToolCard
-                icon={
-                  <Image
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                    alt="React"
-                    width={30}
-                    height={30}
-                    style={{
-                      width: "auto",
-                      height: "auto",
-                      maxWidth: "30px",
-                      maxHeight: "30px",
-                    }}
-                  />
-                }
-                title="React"
-                description="How I use React in projects"
-                content="React is my go-to library for building responsive, modern UIs. I've used it extensively in both client and personal projects—from simple SPAs to large-scale apps with complex state management using tools like Zustand and Redux. I'm comfortable with hooks, reusable components, and performance optimization."
-              />
-              <ToolCard
-                icon={
-                  <Image
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                    alt="TypeScript"
-                    width={30}
-                    height={30}
-                    style={{
-                      width: "auto",
-                      height: "auto",
-                      maxWidth: "30px",
-                      maxHeight: "30px",
-                    }}
-                  />
-                }
-                title="TypeScript"
-                description="Why I love TypeScript"
-                content="TypeScript helps me write safer and more maintainable code. I use it in almost every project to define clear interfaces, catch bugs early, and improve team collaboration. It's especially helpful when working with large codebases or integrating APIs."
-              />
-              <ToolCard
-                icon={
-                  <Image
-                    src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
-                    alt="Next.js"
-                    width={30}
-                    height={30}
-                    style={{
-                      width: "auto",
-                      height: "auto",
-                      maxWidth: "30px",
-                      maxHeight: "30px",
-                    }}
-                  />
-                }
-                title="Next.js"
-                description="How I use Next.js"
-                content="Next.js is my preferred framework for building fullstack applications. I've used it to implement SSR, dynamic routing, and API routes in multiple projects. Its hybrid rendering capabilities and seamless integration with Vercel make deployment and scaling easy."
-              />
-              <ToolCard
-                icon={
-                  <Image
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                    alt="Node.js"
-                    width={30}
-                    height={30}
-                    style={{
-                      width: "auto",
-                      height: "auto",
-                      maxWidth: "30px",
-                      maxHeight: "30px",
-                    }}
-                  />
-                }
-                title="Node.js"
-                description="What I use Node.js for"
-                content="I use Node.js as the foundation for backend logic in projects where I need custom APIs or real-time features. Whether with Express or building RESTful routes in a Next.js app, I'm confident in setting up servers, handling requests, and working with tools like Prisma or MongoDB."
-              />
-            </div>
-          </div>
-        </div>
+    {/* Tool Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+      <ToolCard
+        icon={
+          <Image
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            alt="React"
+            width={30}
+            height={30}
+          />
+        }
+        title="React"
+        description="How I use React in projects"
+        content="React is my go-to library for building responsive, modern UIs. I've used it extensively in both client and personal projects—from simple SPAs to large-scale apps with complex state management using tools like Zustand and Redux. I'm comfortable with hooks, reusable components, and performance optimization."
+      />
+      <ToolCard
+        icon={
+          <Image
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            alt="TypeScript"
+            width={30}
+            height={30}
+          />
+        }
+        title="TypeScript"
+        description="Why I love TypeScript"
+        content="TypeScript helps me write safer and more maintainable code. I use it in almost every project to define clear interfaces, catch bugs early, and improve team collaboration. It's especially helpful when working with large codebases or integrating APIs."
+      />
+      <ToolCard
+        icon={
+          <Image
+            src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+            alt="Next.js"
+            width={30}
+            height={30}
+          />
+        }
+        title="Next.js"
+        description="How I use Next.js"
+        content="Next.js is my preferred framework for building fullstack applications. I've used it to implement SSR, dynamic routing, and API routes in multiple projects. Its hybrid rendering capabilities and seamless integration with Vercel make deployment and scaling easy."
+      />
+      <ToolCard
+        icon={
+          <Image
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+            alt="Node.js"
+            width={30}
+            height={30}
+          />
+        }
+        title="Node.js"
+        description="What I use Node.js for"
+        content="I use Node.js as the foundation for backend logic in projects where I need custom APIs or real-time features. Whether with Express or building RESTful routes in a Next.js app, I'm confident in setting up servers, handling requests, and working with tools like Prisma or MongoDB."
+      />
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );

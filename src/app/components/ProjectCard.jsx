@@ -33,12 +33,6 @@ const ProjectCard = ({
                   width={20}
                   height={20}
                   className="mr-2"
-                  style={{
-                    width: "auto",
-                    height: "auto",
-                    maxWidth: "20px",
-                    maxHeight: "20px",
-                  }}
                 />
                 <span className="text-xs">{tech.name}</span>
               </div>
