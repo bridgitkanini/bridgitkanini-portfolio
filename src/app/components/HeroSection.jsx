@@ -40,7 +40,7 @@ const HeroSection = () => {
           </h1>
         </motion.div>
         <p className="text-[#ADB7BE] text-base text-center sm:text-lg mb-2 lg:text-base">
-          Transforming Ideas into Dynamic, Visually Engaging Web Experiences
+          Transforming Brilliant Ideas into Dynamic, Visually Engaging Web Experiences
         </p>
         <div>
           <Link
