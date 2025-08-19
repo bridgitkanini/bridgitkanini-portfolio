@@ -1,6 +1,36 @@
-# Portfolio Website
+# Bridgit Kanini - Portfolio
 
-This is a personal portfolio website built with Next.js and React, showcasing projects, skills, blogs, and testimonials. The site is fully responsive and features a modern, visually engaging design.
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+A modern, responsive portfolio website built with Next.js 13+ and React, showcasing my work, skills, and experience as a software developer.
+
+## Features
+
+- **Modern UI/UX**: Clean, responsive design with smooth animations using Framer Motion
+- **Performance Optimized**: Built with Next.js for optimal performance and SEO
+- **Interactive Elements**: Animated components and transitions for better user engagement
+- **Dark/Light Mode**: Built-in theme support (if implemented)
+- **Contact Form**: Integrated with EmailJS for easy communication
+
+## Tech Stack
+
+- **Frontend**:
+  - Next.js 13+ (App Router)
+  - React 19
+  - Tailwind CSS
+  - Framer Motion
+  - React Type Animation
+
+- **Icons & Styling**:
+  - Hero Icons
+  - Lucide Icons
+  - Font Awesome
+
+- **Form Handling**:
+  - EmailJS
+  - Resend (optional)
 
 ## Main Pages & Sections
 
@@ -24,29 +54,63 @@ The navbar provides smooth scrolling to all main sections: Home, About, Skills, 
 
 - **Email Sending**: The contact form uses [EmailJS](https://www.emailjs.com/) for client-side email delivery. There is also a placeholder for a serverless API route (`/api/send/route.js`) intended for sending emails via the Resend API, but it is currently commented out and not active.
 
-## Tech Stack
 
-- **Frontend**: Next.js, React, Tailwind CSS, Framer Motion, TypeAnimation
-- **Icons**: FontAwesome, Heroicons, Lucide
-- **Email**: EmailJS (client-side), Resend (API placeholder)
-- **Deployment**: Vercel (with redirects configured)
+
+
+## Project Structure
+
+```
+src/
+├── app/                    # App Router
+│   ├── allprojects/        # All projects page
+│   ├── api/                # API routes
+│   ├── components/         # Reusable components
+│   └── singleproject/      # Single project details
+├── public/                 # Static assets
+│   └── images/             # Image assets
+```
 
 ## Getting Started
 
-1. Install dependencies:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/bridgitkanini/bridgitkanini-portfolio.git
+   cd bridgitkanini-portfolio
+   ```
+
+2. Install dependencies
    ```bash
    pnpm install
    ```
-2. Run the development server:
+
+3. Set up environment variables
+   Create a `.env.local` file in the root directory and add your EmailJS credentials:
+   ```
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+4. Run the development server
    ```bash
    pnpm dev
    ```
-3. Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Deployment
+
+This project is configured for deployment on Vercel. Push your changes to the `main` branch to trigger automatic deployments.
 
 ## Customization
 
-- Add or edit projects in `src/app/components/ProjectsData.jsx`.
-- Update blog links in `src/app/components/BlogsSection.jsx`.
-- Adjust skills and tools in `src/app/components/SkillsSection.jsx` and `AboutSection.jsx`.
+- Update your personal information in the relevant component files
+- Add/update projects in the project data files
+- Modify the color scheme in `tailwind.config.js`
+- Update the favicon and other assets in the `public` directory
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
