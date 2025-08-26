@@ -26,21 +26,43 @@ A modern, responsive portfolio website built with Next.js 13+ and React, showcas
 
 - **Form Handling**:
   - EmailJS
-  - Resend (optional)
 
-## Main Pages & Sections
+## Main Sections
 
-- **Home**: Landing page with a hero section introducing Bridgit Kanini, including animated titles and quick links to contact or learn more.
-- **About**: Details about Bridgit’s background, including skills, education, certifications, and a summary of experience and interests.
-- **Skills**: Visual display of technical skills and tools, with highlights on how each is used in real projects.
-- **Projects**:
-  - **Personal Projects**: Showcases individual projects with descriptions, tech stack, and links to GitHub and live previews.
-  - **Open Source Projects**: Highlights open source contributions with similar details.
-  - **All Projects**: Dedicated page to browse all projects in a grid layout.
-  - **Single Project**: Dynamic route to view detailed information about a specific project.
-- **Blog**: Features selected articles with links to full posts on Hashnode.
-- **Testimonials**: Carousel of client reviews and feedback.
-- **Contact**: Email form for direct contact, plus social media links (GitHub, LinkedIn, Twitter).
+- **Hero Section**
+  - Introduction to Bridgit Kanini
+  - Animated titles and call-to-action buttons
+
+- **About**
+  - Professional background and experience
+  - Education and certifications
+  - Personal interests and tech stack
+
+- **Skills**
+  - Technical skills with proficiency levels
+  - Tools and technologies
+  - Frameworks and libraries
+
+- **Projects**
+  - **Personal Projects**: Web2 applications with descriptions, tech stack, and links to GitHub and live previews.
+  - **Open Source Contributions**: Highlights of open source projects with similar details and contribution information.
+  - **Web3 Projects**: Blockchain-based projects showcasing smart contracts and decentralized applications.
+  - **Mobile Projects**: Cross-platform mobile applications with details on technologies used and app store links.
+  - Interactive filtering between different project categories
+  - Detailed project cards with technologies, features, and links
+
+- **Testimonials**
+  - Client reviews and feedback
+  - Professional recommendations
+
+- **Blog**
+  - Latest articles and technical writing
+  - Links to full posts on Hashnode
+
+- **Contact**
+  - Email contact form
+  - Social media links (GitHub, LinkedIn, Twitter)
+  - Direct communication options
 
 ## Navigation
 
