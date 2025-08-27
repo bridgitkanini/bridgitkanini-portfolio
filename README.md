@@ -70,7 +70,7 @@ The navbar provides smooth scrolling to all main sections: Home, About, Skills, 
 
 ## API & Backend
 
-- **Email Sending**: The contact form uses [EmailJS](https://www.emailjs.com/) for client-side email delivery. There is also a placeholder for a serverless API route (`/api/send/route.js`) intended for sending emails via the Resend API, but it is currently commented out and not active.
+- **Email Sending**: The contact form uses [EmailJS](https://www.emailjs.com/) for client-side email delivery. 
 
 
 
