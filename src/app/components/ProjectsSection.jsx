@@ -59,7 +59,7 @@ const ProjectsSection = () => {
               : "bg-[#241c0a] text-amber-500"
           }`}
         >
-          Web2
+          Web
         </button>
         <button
           onClick={() => handleTabChange("opensource")}
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
         >
           Open Source
         </button>
-        <button
+        {/* <button
           onClick={() => handleTabChange("web3")}
           className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
             activeTab === "web3"
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
           }`}
         >
           Web3
-        </button>
+        </button> */}
         <button
           onClick={() => handleTabChange("mobile")}
           className={`text-sm sm:text-xl inline-block w-auto rounded-full px-4 py-1 border border-amber-500 hover:tracking-widest transition-all ease-in-out duration-1000 cursor-pointer ${
