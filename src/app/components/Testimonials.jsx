@@ -102,7 +102,7 @@ const Testimonials = () => {
        <div className="flex justify-center mt-6 md:mt-8 space-x-2 md:space-x-4 px-4">
           <button
             onClick={prevTestimonial}
-            className="text-sm w-12 h-12 md:w-fit md:h-fit rounded-full px-3 md:px-4 py-2 md:py-1 border border-amber-500 hover:bg-amber-300 bg-[#241c0a] text-amber-500 hover:text-amber-700 flex items-center justify-center"
+            className="text-sm w-12 h-12 md:w-fit md:h-fit rounded-full px-3 md:px-4 py-2 md:py-1 border border-amber-500 hover:bg-amber-500 bg-[#241c0a] text-amber-500 hover:text-amber-700 flex items-center justify-center"
           >
             <ChevronLeft size={16} className="md:w-5 md:h-5" />
           </button>
